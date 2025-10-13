@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Project Version="1" Minor="7" DIGEST="">
+	<TOOL_VERSION Version="2022.1"/>
+	<MODE Name="Post-Synthesis"/>
+	<SYSTEMINFO BOARD="digilentinc.com:arty-a7-100:1.1" PART="xc7a100tcsg324-1" ARCH="artix7" PACKAGE="csg324" DEVICE="7a100t" SPEED="-1"/>
+	<HIERARCHY Name="m3_for_arty_a7_wrapper"/>
+	<File Type="HW_HANDOFF" Name="m3_for_arty_a7.hwh" src_db="m3_for_arty_a7.hwdef" DESIGN_HIERARCHY="m3_for_arty_a7_i" BD_TYPE="DEFAULT_BD">
+	</File>
+	<File Type="BDA" Name="m3_for_arty_a7.bda" src_db="m3_for_arty_a7.hwdef">
+	</File>
+	<File Type="BIT" Name="m3_for_arty_a7_wrapper_custom.bit" src_db="temp.hdf">
+	</File>
+	<File Type="MMI" Name="m3_for_arty_a7_wrapper_custom.mmi" src_db="temp.hdf">
+	</File>
+	<USEDRESOURCES/>
+</Project>
+

@@ -1,0 +1,86 @@
+{
+    "versionMajor": "0",
+    "versionMinor": "0",
+    "usesPR": "false",
+    "platformState": "pre_synth",
+    "topModuleName": "m3_for_arty_a7_wrapper",
+    "acceleratorBinaryFormat": "xclbin2",
+    "acceleratorBinaryContent": "bitstream",
+    "validAcceleratorBinaryContentValues": "dcp,bitstream",
+    "dcpFunctionStripped": "false",
+    "dcpEncrypted": "false",
+    "defaultOutputType": "hw_export",
+    "designIntent": {
+        "dataCenter": {
+            "value": "false",
+            "explicit": "false"
+        },
+        "embedded": {
+            "value": "false",
+            "explicit": "false"
+        },
+        "externalHost": {
+            "value": "false",
+            "explicit": "false"
+        },
+        "serverManaged": {
+            "value": "false",
+            "explicit": "false"
+        }
+    },
+    "board": {
+        "name": "digilentinc.com:arty-a7-100:1.1",
+        "vendor": "digilentinc.com",
+        "part": "xc7a100tcsg324-1",
+        "boardPart": "digilentinc.com:arty-a7-100:part0:1.1"
+    },
+    "devices": [
+        {
+            "name": "fpga0",
+            "type": "8",
+            "fpgaPart": "artix7:xc7a100t:csg324:-1",
+            "part": {
+                "name": "xc7a100tcsg324-1",
+                "architecture": "artix7",
+                "device": "xc7a100t",
+                "package": "csg324",
+                "speedGrade": "-1"
+            },
+            "core": {
+                "name": "OCL_REGION_0",
+                "type": "clc_region",
+                "numComputeUnits": "60"
+            }
+        }
+    ],
+    "files": [
+        {
+            "name": "m3_for_arty_a7_wrapper_custom.bit",
+            "type": "FULL_BIT"
+        },
+        {
+            "name": "m3_for_arty_a7_wrapper_custom.mmi",
+            "type": "MMI"
+        }
+    ],
+    "vendor": "xilinx",
+    "boardId": "arty",
+    "description": "Vivado generated Hardware Platform",
+    "uniqueName": "xilinx:arty::0.0",
+    "fpgaPart": "artix7",
+    "fpgaDevice": "xc7a100t",
+    "unifiedPlatform": "true",
+    "expandablePlatform": "false",
+    "hardware": "true",
+    "softwareEmulation": "true",
+    "hardwareEmulation": "false",
+    "hardwareEmuPlatform": "false",
+    "usesNIFD": "false",
+    "generatedName": "Vivado",
+    "generatedVersion": "2022.1",
+    "generatedChangeList": "3526262",
+    "generatedIpChangeList": "3524634",
+    "generatedTimestamp": "Fri Sep 12 13:50:38 2025",
+    "idCode": "03631093"
+}
+

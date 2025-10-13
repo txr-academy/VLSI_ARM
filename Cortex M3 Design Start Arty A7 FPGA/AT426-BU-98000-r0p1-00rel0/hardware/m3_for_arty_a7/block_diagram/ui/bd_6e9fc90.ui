@@ -1,0 +1,64 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.633333",
+   "Default View_TopLeft":"-772,0",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port S_AXI -pg 1 -lvl 0 -x -40 -y 300 -defaultsOSRD
+preplace port UART_out -pg 1 -lvl 4 -x 1040 -y 300 -defaultsOSRD
+preplace port Shield_out -pg 1 -lvl 4 -x 1040 -y 270 -defaultsOSRD
+preplace port C_AXI -pg 1 -lvl 0 -x -40 -y 60 -defaultsOSRD
+preplace port port-id_s_axi_aclk -pg 1 -lvl 0 -x -40 -y 90 -defaultsOSRD
+preplace port port-id_s_axi_aresetn -pg 1 -lvl 0 -x -40 -y 120 -defaultsOSRD
+preplace port port-id_DAPLink_fittedn -pg 1 -lvl 4 -x 1040 -y 360 -defaultsOSRD
+preplace port port-id_qspi_irq -pg 1 -lvl 4 -x 1040 -y 240 -defaultsOSRD
+preplace port port-id_ext_spi_clk -pg 1 -lvl 0 -x -40 -y 240 -defaultsOSRD
+preplace port port-id_uart_rxd_axi -pg 1 -lvl 4 -x 1040 -y 330 -defaultsOSRD
+preplace port port-id_SWDI -pg 1 -lvl 4 -x 1040 -y 390 -defaultsOSRD
+preplace port port-id_SWCLK -pg 1 -lvl 4 -x 1040 -y 420 -defaultsOSRD
+preplace port port-id_nSRST -pg 1 -lvl 4 -x 1040 -y 450 -defaultsOSRD
+preplace port port-id_SWDOEN -pg 1 -lvl 0 -x -40 -y 20 -defaultsOSRD
+preplace port port-id_SWDO -pg 1 -lvl 0 -x -40 -y 210 -defaultsOSRD
+preplace port port-id_uart_txd_axi -pg 1 -lvl 0 -x -40 -y 600 -defaultsOSRD
+preplace port port-id_spi_irq -pg 1 -lvl 4 -x 1040 -y 700 -defaultsOSRD
+preplace port port-id_qspi_xip_irq -pg 1 -lvl 4 -x 1040 -y 150 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 1 -x 170 -y 420 -defaultsOSRD
+preplace inst axi_single_spi_0 -pg 1 -lvl 2 -x 510 -y 690 -defaultsOSRD
+preplace inst axi_quad_spi_0 -pg 1 -lvl 2 -x 510 -y 350 -defaultsOSRD
+preplace inst axi_xip_quad_spi_0 -pg 1 -lvl 2 -x 510 -y 140 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 2 -x 510 -y 520 -defaultsOSRD
+preplace inst axi_protocol_convert_0 -pg 1 -lvl 1 -x 170 -y 100 -defaultsOSRD
+preplace inst DAPLink_to_Arty_shield_0 -pg 1 -lvl 3 -x 850 -y 390 -defaultsOSRD
+preplace netloc s_axi_aclk_1 1 0 2 10 180 350
+preplace netloc s_axi_aresetn_1 1 0 2 20 190 360
+preplace netloc DAPLink_to_Arty_shie_1_DAPLink_fittedn 1 3 1 1010J 360n
+preplace netloc DAPLink_to_Arty_shie_1_uart_rxd_axi 1 3 1 1000J 330n
+preplace netloc DAPLink_to_Arty_shie_1_SWDI 1 3 1 1020J 390n
+preplace netloc DAPLink_to_Arty_shie_1_SWCLK 1 3 1 1000J 420n
+preplace netloc DAPLink_to_Arty_shie_1_SWRSTn 1 3 1 NJ 450
+preplace netloc uart_txd_axi_1 1 0 3 -10J 240 370J 260 660J
+preplace netloc ext_spi_clk_1 1 0 3 -20J 230 340 440 650J
+preplace netloc axi_quad_spi_1_ip2intc_irpt 1 2 2 650J 240 NJ
+preplace netloc axi_single_spi_0_ip2intc_irpt 1 2 2 NJ 700 NJ
+preplace netloc axi_gpio_0_gpio_io_o 1 2 1 680 400n
+preplace netloc axi_xip_quad_spi_0_ip2intc_irpt 1 2 2 NJ 150 NJ
+preplace netloc SWDO_1 1 0 3 0J 600 NJ 600 700J
+preplace netloc SWDOEN_1 1 0 3 NJ 20 NJ 20 670J
+preplace netloc axi_interconnect_0_M00_AXI 1 1 1 320 80n
+preplace netloc axi_interconnect_0_M01_AXI 1 1 1 330 410n
+preplace netloc C_AXI_1 1 0 1 10J 60n
+preplace netloc axi_xip_quad_spi_0_SPI_0 1 2 1 690 130n
+preplace netloc axi_single_spi_0_SPI_0 1 2 1 690 360n
+preplace netloc axi_protocol_convert_0_M_AXI 1 1 1 N 100
+preplace netloc axi_interconnect_0_M03_AXI 1 1 1 370 320n
+preplace netloc S_AXI_1 1 0 1 NJ 300
+preplace netloc DAPLink_to_Arty_shie_1_shield 1 3 1 980J 270n
+preplace netloc DAPLink_to_Arty_shie_1_UART 1 3 1 990J 300n
+preplace netloc axi_interconnect_0_M02_AXI 1 1 1 320 430n
+preplace netloc axi_quad_spi_1_SPI_0 1 2 1 N 340
+levelinfo -pg 1 -40 170 510 850 1040
+pagesize -pg 1 -db -bbox -sgen -180 0 1200 780
+"
+}
+

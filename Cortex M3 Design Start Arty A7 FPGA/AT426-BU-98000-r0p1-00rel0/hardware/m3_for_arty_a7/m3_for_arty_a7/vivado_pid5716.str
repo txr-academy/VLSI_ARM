@@ -1,0 +1,251 @@
+/*
+
+Xilinx Vivado v2022.1 (64-bit) [Major: 2022, Minor: 1]
+SW Build: 3526262 on Mon Apr 18 15:47:01 MDT 2022
+IP Build: 3524634 on Mon Apr 18 20:55:01 MDT 2022
+
+Process ID (PID): 5716
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon Oct 06 10:16:12 IST 2025
+Time zone: 	India Standard Time (Asia/Kolkata)
+
+OS: Ubuntu
+OS Version: 6.11.0-29-generic
+OS Architecture: amd64
+Available processors (cores): 12
+
+Display: 0
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	/home/arjun/tool/Vivado/2022.1/tps/lnx64/jre11.0.11_9
+Java executable: 	/home/arjun/tool/Vivado/2022.1/tps/lnx64/jre11.0.11_9/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Djdk.gtk.version=2, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m, -Xrs]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	arjun
+User home directory: /home/arjun
+User working directory: /home/arjun/Vivado_PROJECTS/ARM_XPM_06_oct_2025 _og/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /home/arjun/tool/Vivado
+HDI_APPROOT: /home/arjun/tool/Vivado/2022.1
+RDI_DATADIR: /home/arjun/tool/Vivado/2022.1/data
+RDI_BINDIR: /home/arjun/tool/Vivado/2022.1/bin
+
+Vivado preferences file: /home/arjun/.Xilinx/Vivado/2022.1/vivado.xml
+Vivado preferences directory: /home/arjun/.Xilinx/Vivado/2022.1/
+Vivado layouts directory: /home/arjun/.Xilinx/Vivado/2022.1/data/layouts
+PlanAhead jar file: 	/home/arjun/tool/Vivado/2022.1/lib/classes/planAhead.jar
+Vivado log file: 	/home/arjun/Vivado_PROJECTS/ARM_XPM_06_oct_2025 _og/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/vivado.log
+Vivado journal file: 	/home/arjun/Vivado_PROJECTS/ARM_XPM_06_oct_2025 _og/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-5716-arjun-Aspire-A315-59
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /home/arjun/tool/Vivado/2022.1/ids_lite/ISE
+XILINX_DSP: /home/arjun/tool/Vivado/2022.1/ids_lite/ISE
+XILINX_HLS: /home/arjun/tool/Vitis_HLS/2022.1
+XILINX_PLANAHEAD: /home/arjun/tool/Vivado/2022.1
+XILINX_SDK: /home/arjun/tool/Vitis/2022.1
+XILINX_VITIS: /home/arjun/tool/Vitis/2022.1
+XILINX_VIVADO: /home/arjun/tool/Vivado/2022.1
+XILINX_VIVADO_HLS: /home/arjun/tool/Vivado/2022.1
+
+
+GUI allocated memory:	475 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 2,075 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,848 MB. GUI used memory: 58 MB. Current time: 10/6/25, 10:16:13 AM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // y
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("/home/arjun/Vivado_PROJECTS/ARM_XPM_06_oct_2025 _og/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/m3_for_arty_a7.xpr");
+// Opening Vivado Project: /home/arjun/Vivado_PROJECTS/ARM_XPM_06_oct_2025 _og/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/m3_for_arty_a7.xpr. Version: Vivado v2022.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {/home/arjun/Vivado_PROJECTS/ARM_XPM_06_oct_2025 _og/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/m3_for_arty_a7.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/arjun/Vivado_PROJECTS/ARM_XPM_06_oct_2025 _og/AT426-BU-98000-r0p1-00rel0/vivado/Arm_ipi_repository'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/arjun/tool/Vivado/2022.1/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 119 MB (+122154kb) [00:00:32]
+// [Engine Memory]: 1,911 MB (+1852111kb) [00:00:32]
+// WARNING: HEventQueue.dispatchEvent() is taking  3523 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 7647.809 ; gain = 78.000 ; free physical = 238 ; free virtual = 7348 
+// Project name: m3_for_arty_a7; location: /home/arjun/Vivado_PROJECTS/ARM_XPM_06_oct_2025 _og/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bA
+// [GUI Memory]: 143 MB (+19484kb) [00:00:38]
+// [Engine Memory]: 2,071 MB (+68123kb) [00:00:38]
+// [Engine Memory]: 2,553 MB (+396492kb) [00:00:40]
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// TclEventType: DG_GRAPH_STALE
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: DG_GRAPH_STALE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 151 MB (+526kb) [00:00:45]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "2", 1); // e
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+// 'cW' command handler elapsed time: 8 seconds
+dismissDialog("Launch Runs"); // cZ
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("No Implementation Results Available"); // A
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cW' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Mon Oct  6 10:17:00 2025] Launched synth_1... Run output will be captured here: /home/arjun/Vivado_PROJECTS/ARM_XPM_06_oct_2025 _og/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/m3_for_arty_a7.runs/synth_1/runme.log [Mon Oct  6 10:17:00 2025] Launched impl_1... Run output will be captured here: /home/arjun/Vivado_PROJECTS/ARM_XPM_06_oct_2025 _og/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/m3_for_arty_a7.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1041 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1267 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1978 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2163 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5931 ms. Increasing delay to 17793 ms.
+// WARNING: HTimer (a Update Status Timer) is taking 1328ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2600 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5725 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 283ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1367 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1942 ms. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1236 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 526 ms. Decreasing delay to 2526 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1027 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1411 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2242 ms. Increasing delay to 6726 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1016 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1307 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1262 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1844 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1122 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1373 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1555 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3313 ms. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2041 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2188 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 22765 ms. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 18968 ms. Increasing delay to 56904 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1374 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2345 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1044 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1057 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5511 ms. Increasing delay to 7000 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 553ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1030 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3468 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1068 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1072 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1011 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 38 ms. Decreasing delay to 2038 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1119 ms. Increasing delay to 3357 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1988 ms. Increasing delay to 5964 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1165 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1043 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1360 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1283 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4025 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1761 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1059 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1207 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1074 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5917 ms. Increasing delay to 17751 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1055 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3138 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 490 ms. Decreasing delay to 2490 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3644 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 440ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1094 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1886 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1169 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6369 ms. Increasing delay to 19107 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5131 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2062 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1205ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2555 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 914ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1015 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 8471 ms. Increasing delay to 8000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1121 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  33034 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7655 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 58494 ms. Increasing delay to 9000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5947 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1081 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1731ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1859 ms.
+// WARNING: HTimer (a Update Status Timer) is taking 1075ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1247 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6456 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 58502 ms. Increasing delay to 175506 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2196 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6219 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1231 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1298ms to process. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1622 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  33135 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1253 ms.

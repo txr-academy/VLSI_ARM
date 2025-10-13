@@ -29,8 +29,8 @@
 # -----------------------------------------------------------------------------
 
 # Set MMI output file name
-set mmi_file "m3.mmi"
-set part     "xc7a35ticsg324-1L"
+set mmi_file "m3_new.mmi"
+set part     "xc7a100tcsg324-1"
 
 # Function to swap bits
 proc swap_bits { bit } {

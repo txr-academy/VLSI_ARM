@@ -28,7 +28,7 @@
 
 @REM - Create the output files.
 @REM - File to load into FPGA RAM
-call fromelf --vhx --32x1 --output bram_a7.hex objects\m3_for_arty_a7.axf
+call "C:\Keil_v5\ARM\ARM_Compiler_5.06u7\bin\fromelf.exe" --vhx --32x1 --output bram_a7.hex objects\m3_for_arty_a7.axf
 @REM - File to merge SW into bitstream
 @REM axf file will work, but has to be renamed to .elf for updatemem to work
 copy  objects\m3_for_arty_a7.axf bram_a7.elf

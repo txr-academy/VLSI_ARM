@@ -1,0 +1,32 @@
+
+set_property MARK_DEBUG true [get_nets m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/ITCMEN]
+create_debug_core u_ila_0 ila
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list m3_for_arty_a7_i/Clocks_and_Resets/clk_wiz_0/inst/clk_out1]]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+set_property port_width 32 [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[0]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[1]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[2]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[3]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[4]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[5]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[6]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[7]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[8]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[9]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[10]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[11]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[12]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[13]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[14]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[15]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[16]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[17]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[18]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[19]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[20]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[21]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[22]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[23]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[24]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[25]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[26]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[27]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[28]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[29]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[30]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/dinA[31]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+set_property port_width 13 [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/genblk3[1].ram_block_reg_3_1_0[0]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/genblk3[1].ram_block_reg_3_1_0[1]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/genblk3[1].ram_block_reg_3_1_0[2]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/genblk3[1].ram_block_reg_3_1_0[3]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/genblk3[1].ram_block_reg_3_1_0[4]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/genblk3[1].ram_block_reg_3_1_0[5]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/genblk3[1].ram_block_reg_3_1_0[6]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/genblk3[1].ram_block_reg_3_1_0[7]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/genblk3[1].ram_block_reg_3_1_0[8]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/genblk3[1].ram_block_reg_3_1_0[9]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/genblk3[1].ram_block_reg_3_1_0[10]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/genblk3[1].ram_block_reg_3_1_0[11]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/genblk3[1].ram_block_reg_3_1_0[12]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+set_property port_width 32 [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[0]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[1]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[2]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[3]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[4]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[5]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[6]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[7]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[8]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[9]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[10]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[11]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[12]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[13]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[14]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[15]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[16]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[17]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[18]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[19]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[20]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[21]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[22]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[23]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[24]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[25]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[26]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[27]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[28]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[29]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[30]} {m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/doutA[31]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list m3_for_arty_a7_i/Cortex_M3_0/inst/u_x_itcm/ITCMEN]]
+set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
+set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
+set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
+connect_debug_port dbg_hub/clk [get_nets BRAM_PORTA_0_clk]

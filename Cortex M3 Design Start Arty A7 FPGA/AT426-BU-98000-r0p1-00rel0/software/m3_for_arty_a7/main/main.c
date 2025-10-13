@@ -18,334 +18,187 @@
 /*
  * --------Included Headers--------
  */
+#if defined(__CC_ARM) || defined(__ARMCC_VERSION)
+  #ifndef inline
+    #define inline __inline
+  #endif
+#endif
+/*
+ * Full integrated main.c example for ARM Cortex M3 + Xilinx GPIO + UART
+ */
 
 #include <stdio.h>
-#include <ctype.h>
 #include <string.h>
-#include <stdlib.h>
-#include <time.h>
-
-// Xilinx specific headers
 #include "xparameters.h"
 #include "xgpio.h"
+#include "m3_for_arty.h"    // Your platform-specific stuff (e.g. NVIC functions)
+#include "uart.h"           // UART init and print functions
 
-#include "m3_for_arty.h"        // Project specific header
-#include "gpio.h"
-#include "uart.h"
-#include "spi.h"
-#include "atomic.h"
+// Device defines (adjust to your hardware setup)
+#define GPIO_LEDS_DEVICE_ID      XPAR_AXI_GPIO_1_DEVICE_ID      // LEDs & Switches
+#define GPIO_RGB_DEVICE_ID       XPAR_AXI_GPIO_0_DEVICE_ID      // Push Buttons & RGB LEDs
+#define LED_CHANNEL              2   // LED output channel
+#define SWITCH_CHANNEL           1   // Switch input channel
+#define LED_MASK                 0x0F
+#define SWITCH_MASK              0x0F
+#define RGB_CHANNEL              2
+#define BUTTON_CHANNEL           1
+#define BUTTON_MASK              0x0F
+#define RGB_LED_MASK(i)          (0x07 << (i*3))   // 3 bits per RGB LED
 
-// Atomic test function
-uint32_t atomic_test(uint32_t *mem, uint32_t val);
+typedef enum {
+    RGB_OFF = 0x0,
+    RGB_BLUE = 0x1,
+    RGB_GREEN = 0x2,
+    RGB_RED = 0x4,
+    RGB_CYAN = 0x3,      // blue + green
+    RGB_MAGENTA = 0x5,   // blue + red
+    RGB_YELLOW = 0x6,    // green + red
+    RGB_WHITE = 0x7      // red + green + blue
+} rgb_color_t;
 
-/*******************************************************************/
+// GPIO instances
+XGpio gpio_leds, gpio_rgb;
 
-int main (void)
-{
+// State tracking
+static rgb_color_t current_rgb_color[4] = {RGB_OFF, RGB_OFF, RGB_OFF, RGB_OFF};
+static u32 last_switch_state = 0;
+static u32 last_button_state = 0;
 
-    // Define local variables
-    int     status;
-    int     DAPLinkFittedn;
-    int     i;
-    int     readbackError;
-    char    debugStr[256];
-    
-    // Illegal location
-    volatile u32 emptyLoc;
-    volatile u32 QSPIbase;
-        
-    // DTCM test location
-    uint32_t dtcmTest;
-    
-    // BRAM base
-    // Specify as volatile to ensure processor reads values back from BRAM
-    // and not local storage
-    volatile u32 *pBRAMmemory = (u32 *)XPAR_BRAM_0_BASEADDR;
+// Forward declarations
+int InitialiseUART(void);
+void print(const char *str);
 
-    // CPU ID register
-    volatile u32 *pCPUId = (u32 *)0xE000ED00;
-    volatile u32 CPUId;
-    volatile u32 alias_test;
-    int          CPU_part;
-    int          CPU_rev;
-    int          CPU_var;
-    char         CPU_name[20];
-        
-    // Enable the following if you wish to test illegal accesses
-    // and debug lock-up conditions
-/*    
-    u32 *pLegalAddr   = (u32 *)0x40120000;
-    u32 *pIllegalAddr = (u32 *)0x40200000;
-*/
+void init_platform(void);
+void cleanup_platform(void);
 
+void print_boot_messages(void) {
+    print("\r\nWelcome to ARM Cortex M3\r\n");
+    print("BOOTING FROM ITCM\r\n");
+    print("TRAIL VERSION 1.0\r\n");
+}
 
-    // Test data for SPI
-    u8 spi_tx_data[8] = {0x01,0x23,0x45,0x67,0x89,0xab,0xcd,0xef};
-    u8 spi_rx_data[8] = {0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff};
-    
-    // Test data for BRAM
-    u32 bram_data[8] = {0x01234567, 0x89abcdef, 0xdeadbeef, 0xfeebdaed, 0xa5f03ca5, 0x87654321, 0xfedc0ba9, 0x01020408};
+void gpio_init(void) {
+    XGpio_Initialize(&gpio_leds, GPIO_LEDS_DEVICE_ID);
+    XGpio_SetDataDirection(&gpio_leds, SWITCH_CHANNEL, SWITCH_MASK);
+    XGpio_SetDataDirection(&gpio_leds, LED_CHANNEL, 0x00);
 
-    // Initialise the UART
-    InitialiseUART();
+    XGpio_Initialize(&gpio_rgb, GPIO_RGB_DEVICE_ID);
+    XGpio_SetDataDirection(&gpio_rgb, BUTTON_CHANNEL, BUTTON_MASK);
+    XGpio_SetDataDirection(&gpio_rgb, RGB_CHANNEL, 0x00);
 
-    // Clear all interrupts
-    NVIC_ClearAllPendingIRQ();
-    
-    // Initialise the GPIO
-    status = InitialiseGPIO();
-    if (status != XST_SUCCESS)  {
-        print("Error - Xilinx GPIO failed to initialise\n");
+    XGpio_DiscreteWrite(&gpio_leds, LED_CHANNEL, 0x00);
+    XGpio_DiscreteWrite(&gpio_rgb, RGB_CHANNEL, 0x00);
+}
+
+void handle_switch_leds(void) {
+    u32 switches = XGpio_DiscreteRead(&gpio_leds, SWITCH_CHANNEL) & SWITCH_MASK;
+    XGpio_DiscreteWrite(&gpio_leds, LED_CHANNEL, switches);
+
+    int i;
+    for (i = 0; i < 4; i++) {
+        u32 mask = 1 << i;
+        if ((switches & mask) != (last_switch_state & mask)) {
+            char msg1[64];
+            sprintf(msg1,"Switch %d %s: LED %d %s\r\n", 
+                i, (switches & mask) ? "ON" : "OFF", i, (switches & mask) ? "ON" : "OFF");
+            print(msg1);
+        }
     }
+    last_switch_state = switches;
+}
 
-    // Enable GPIO Interrupts
-    NVIC_EnableIRQ(GPIO0_IRQn);
-    NVIC_EnableIRQ(GPIO1_IRQn);
-    EnableGPIOInterrupts();
+void set_rgb_led(int index, rgb_color_t color) {
+    u32 reg = XGpio_DiscreteRead(&gpio_rgb, RGB_CHANNEL);
+    u32 mask = RGB_LED_MASK(index);
+    reg = (reg & ~mask) | (((u32)color << (index * 3)) & mask);
+    XGpio_DiscreteWrite(&gpio_rgb, RGB_CHANNEL, reg);
+}
 
-    // Enable UART Interrupts
-    NVIC_EnableIRQ(UART0_IRQn);
-    EnableUARTInterrupts();
-
-    // Read the DAPLinkFitted input, (assigned to IRQ[31]).
-    // Note the IRQ is never enabled, so polling the pending register will indicate the status
-    NVIC_DisableIRQ(DAPLinkFittedn_IRQn);
-    DAPLinkFittedn = NVIC_GetPendingIRQ( DAPLinkFittedn_IRQn );
-
-
-    // Initialise the SPI
-    status = InitialiseSPI(DAPLinkFittedn);
-    if (status != XST_SUCCESS)  {
-        print("Error - Xilinx SPI controllers failed to initialise\n");
+void cycle_rgb_color(int index) {
+    switch (current_rgb_color[index]) {
+        case RGB_OFF:     current_rgb_color[index] = RGB_RED;     break;
+        case RGB_RED:     current_rgb_color[index] = RGB_GREEN;   break;
+        case RGB_GREEN:   current_rgb_color[index] = RGB_BLUE;    break;
+        case RGB_BLUE:    current_rgb_color[index] = RGB_CYAN;    break;
+        case RGB_CYAN:    current_rgb_color[index] = RGB_MAGENTA; break;
+        case RGB_MAGENTA: current_rgb_color[index] = RGB_YELLOW;  break;
+        case RGB_YELLOW:  current_rgb_color[index] = RGB_WHITE;   break;
+        case RGB_WHITE:   current_rgb_color[index] = RGB_OFF;     break;
+        default:          current_rgb_color[index] = RGB_OFF;     break;
     }
+    set_rgb_led(index, current_rgb_color[index]);
+}
 
-    DisableSPIInterrupts();
+void handle_buttons_rgb(void) {
+    u32 buttons = XGpio_DiscreteRead(&gpio_rgb, BUTTON_CHANNEL) & BUTTON_MASK;
 
-
-    // Set DAPLink QSPI to the normal read-write controller
-    // Do NOT do this for code running from the DAPLink QSPI.  This will switch from the XIP QSPI
-    // controller to the standard controller, so the processor will not be able to access it's code image
-    // This should only be done if the XIP QSPI is used to copy code to internal TCM, then boot-load from that TCM
-//    SetDAPLinkQSPIMode( QSPI_QSPIMODE );
-
-    // Read the CPU ID register to auto-detect the CPU and revision
-    // Note however that code is compiled for a specific processor, so even though
-    // the processor can be auto-detected, if the compiled code has extended commands not
-    // supported by the processor, then runtime issues can occur
-    CPUId    = *pCPUId;
-    CPU_var  = ((CPUId & 0x00F00000) >> 20);
-    CPU_part = ((CPUId & 0x0000FFF0) >> 4);
-    CPU_rev  = CPUId & (0x0000000F);
-    
-    switch (CPU_part)
-    {
-      case 0xC21 : strcpy(  CPU_name, "Cortex-M1" ); break;
-      case 0xC23 : strcpy(  CPU_name, "Cortex-M3" ); break;
-      default    : sprintf( CPU_name, "Unknown %x", CPU_part );
+    int i;
+    for (i = 0; i < 4; i++) {
+        u32 mask = 1 << i;
+        if ((buttons & mask) && !(last_button_state & mask)) {  // Edge detection
+            cycle_rgb_color(i);
+            char msg[64];
+            sprintf(msg, "Button %d pressed, RGB LED %d -> color %d\r\n", i, i, current_rgb_color[i]);
+            print(msg);
+        }
     }
-    
-    sprintf (debugStr, "Arm %s Revision %i Variant %i\r\n\n", CPU_name, CPU_rev, CPU_var );
-    
-#ifndef SIM_BUILD    
-    // Use Xilinx version print command
-    print ("************************************\r\n");
-    print ( debugStr );
-    print ("Example design for Digilent A7 board\r\n");
-    if ( DAPLinkFittedn )
-      print ("\nV2C-DAPLink board not detected\r\n");
-    else
-      print ("\nV2C-DAPLink board detected\r\n");
-    print ("Use DIP switches and push buttons to\r\ncontrol LEDS\r\n");
-    print (" Version 1.1\r\n");
-    print ("************************************\r\n");
-#else
-    print ( debugStr );
-#endif    
+    last_button_state = buttons;
+}
 
-        // *****************************
-        // Test the code memory aliasing
-        // *****************************
-        // Uses the reserved vector table location 0x0000001c and its alias
-        // This is only writeable in TCM, a write to QSPI will hang
-        // Any access to an unmapped region will hang
-
-        // DAPLINK fitted: (Low QSPI, High BRAM)
-        // DAPLINK absent: (Low BRAM, High BRAM)
-        status = 0;
-
-        if(*(uint32_t*)0x0000001c != 0x55){
-          status += 1;
-           }
-        if(*(uint32_t*)0x1000001c != 0x55){
-          status += 2;
-          }
-
-        // Write to ITCM upper alias
-        *(uint32_t*)0x1000001c = 12;
-
-        if(DAPLinkFittedn){
-        //Lower alias should have changed
-          if(*(uint32_t*)0x0000001c != 12){
-            status += 4;
-            }
-            // Write to ITCM lower alias
-          *(uint32_t*)0x0000001c = 11;
-          if(*(uint32_t*)0x0000001c != 11){
-            status += 4;
-            }
-          if(*(uint32_t*)0x1000001c != 11){
-            status += 8;
-            }
-          } else {
-          if(*(uint32_t*)0x0000001c != 0x55){
-            status += 4;
-            }
-          if(*(uint32_t*)0x1000001c != 12){
-            status += 8;
-            }
-          }
-
-
-          if (status == 3){
-            print("Upper and lower regions written since BRAM initialised\r\n");
-                                                status = 0;
-            }
-                                        if (status == 2){
-            print("Upper alias writen since BRAM initialised\r\n");
-                                                status = 0;
-                                        }                   
-          if (status == 4 && (*(uint32_t*)0x0000001c == 12)){
-            print("ITCM also aliased high\r\n");
-                                          status = 0;
-            }
-                                        if(status != 0){
-          print("Unexpected alias behaviour");
-          // 1: QSPI content unexpected
-          // 2: ITCM content unexpected (maybe written by download)
-          // 4: Lower alias overwritten or wrong
-          // 8: ITCM Upper alias not changed
-          sprintf(debugStr, " %d\r\n", status);
-          print(debugStr);
-         } else {
-           print ("Aliasing OK\r\n");
-           }
-    // *****************************************************
-    // Test the BRAM
-    // *****************************************************
-    
-    // Write to BRAM
-    for( i=0; i< (sizeof(bram_data)/sizeof(u32)); i++)
-        *pBRAMmemory++ = bram_data[i];
-    readbackError = 0;
-    // Reset the pointer
-    pBRAMmemory = (u32 *)XPAR_BRAM_0_BASEADDR;
-
-    // Readback
-    for( i=0; i< (sizeof(bram_data)/sizeof(u32)); i++)
-    {
-      if ( *pBRAMmemory++ != bram_data[i] )
-        readbackError++;
-      }
-
-    if ( readbackError )
-        print( "ERROR - Bram readback corrupted.\r\n" );
-    else
-        print( "Bram readback correct\r\n" );
-
-
-    // *****************************************************
-    // Test the SPI
-    // *****************************************************
-    
-    // Initialise the base QSPI to the correct mode
-    status = InitQSPIBaseFlash();
-    status = WriteQSPIBaseFlash( spi_tx_data, sizeof(spi_tx_data)/sizeof(u8), 0x0 );
-    status = ReadQSPIBaseFlash ( spi_rx_data, sizeof(spi_rx_data)/sizeof(u8), 0x0 );
-
-
-    // Manually type out, print does work when called back to back from a loop
-/*
-    sprintf( debugStr, "%x %x %x %x %x %x %x %x\r\n", spi_rx_data[0], spi_rx_data[1], spi_rx_data[2], spi_rx_data[3], 
-                                                   spi_rx_data[4], spi_rx_data[5], spi_rx_data[6], spi_rx_data[7] );
-    print( debugStr );
-*/    
-    // Compare buffers
-    readbackError = 0;
-    for( i=0; i<(sizeof(spi_rx_data)/sizeof(u8)); i++ )
-    {
-        if( spi_rx_data[i] != spi_tx_data[i] )
-            readbackError++;
-    }
-
-    if ( readbackError )
-        print( "ERROR - Base SPI readback corrupted.\r\n" );
-    else
-        print( "Base SPI readback correct\r\n" );
-   
-
-    // ******************************************************
-    // Test exceptions.  Write to legal and illegal addresses
-    // ******************************************************
-/*    
-    // Do an access to an legal location
-    emptyLoc = *pLegalAddr;
-
-    // Do an access to an illegal location
-    emptyLoc = *pIllegalAddr;
-
-*/
-   // ******************************************************
-   // Test exclusive transactions
-   // ******************************************************
-   
-   // Data TCM supports exclusive access
-   status = atomic_access(&dtcmTest,0x12341230);
-   if (status == 1) {
-   print( "STREX DTCM failed unexpectedly\r\n");
-   }
-   // Instruction TCM supports exclusive access (ARTY connected)
-   status = atomic_access((uint32_t*)0x10001000,0x12341231);
-   if (status == 1) {
-   print( "STREX ITCM high alias failed unexpectedly\r\n");
-   }
-   // Instruction QSPI region, no exclusive monitor
-   // Unused vector table entry after Usage fault handler
-   status = atomic_access((uint32_t*)0x0000001c,0x12341232);
-   if (status == 1 && DAPLinkFittedn) {
-   print( "STREX ITCM low alias failed unexpectedly\r\n");
-   }
-   if (status == 0 && !DAPLinkFittedn) {
-   print( "STREX QSPI success (unexpected)\r\n");
-   }               
-   // BRAM region is external, no exclusive monitor
-   status = atomic_access((uint32_t*)XPAR_BRAM_0_BASEADDR,0x12341233);
-   if (status == 0 && !DAPLinkFittedn) {
-   print( "STREX BRAM success (unexpected)\r\n");
-   }
-   print( "Atomic transaction test completed\r\n" );
-   
-
-   // print( "Startup complete, entering main interrupt loop\r\n" );
-
-
-    // Main loop.  Handle LEDs and switches via interrupt
-    while ( 1 )
-    {
-        /* Main loop. Wait for interrupts to occur */
-        /*
-        if ( CheckUARTRxBytes() != 0 )
-            print ("x");
-        */
-    
+void delay_us(unsigned int us) {
+    // Rough delay loop for 50 MHz system (adjust based on your clock)
+    volatile unsigned int count;
+    while (us--) {
+        count = 10; // adjust this for your CPU speed (e.g. 10 for 50MHz)
+        while (count--) {
+            __asm("nop");
+        }
     }
 }
 
-/* Interrupt handler for DAPLink Fitted */
-// This routine should never be called as the signal is used as IO
-// Routine created to prevent exceptions in the case the IRQ is enabled
-void DAPLinkFittedn ( void )
-{
-    // Clear the IRQ and disable any future IRQs
-    NVIC_ClearPendingIRQ(DAPLinkFittedn_IRQn);
-    NVIC_DisableIRQ(DAPLinkFittedn_IRQn);
+// ------------------------
+// UART and platform init
+// ------------------------
+
+/*
+ * Definitions of InitialiseUART and print are removed from here
+ * because they are implemented in uart.c/print.c already.
+ * Just keep the declarations here.
+ */
+
+void init_platform(void) {
+    InitialiseUART();           // Initialize UART for print output
+    
+    // Clear interrupts if you want
+    NVIC_ClearAllPendingIRQ();
+    
+    // Additional peripheral init can be done here (SPI, GPIO interrupts etc.)
+}
+
+void cleanup_platform(void) {
+    // If you want to disable interrupts or power down peripherals, do it here
+    // Otherwise, empty
+}
+
+// ------------------------
+// Main
+// ------------------------
+
+int main() {
+    init_platform();        // UART and basic platform init
+
+    print_boot_messages();  // Print welcome messages
+    gpio_init();            // Setup GPIOs
+
+    print("System Ready.\r\n");
+
+    while(1) {
+        handle_switch_leds();
+        handle_buttons_rgb();
+        delay_us(50000);
+    }
+
+    cleanup_platform();     // Cleanup if needed (usually never reached)
+    return 0;
 }

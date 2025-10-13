@@ -1,0 +1,96 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Sep  4 09:38:36 2025
+# Process ID: 4080
+# Current directory: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7
+# Command line: vivado
+# Log file: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/vivado.log
+# Journal file: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/vivado.jou
+# Running On: arjun-Aspire-A315-59, OS: Linux, CPU Frequency: 1301.059 MHz, CPU Physical cores: 10, Host memory: 7483 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/m3_for_arty_a7.xpr
+upgrade_project -migrate_output_products
+update_compile_order -fileset sources_1
+open_bd_design {/home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/m3_for_arty_a7.bd}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/hdl/m3_for_arty_a7_wrapper.v] -no_script -reset -force -quiet
+remove_files  /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/hdl/m3_for_arty_a7_wrapper.v
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_1
+endgroup
+set_property location {5 1575 936} [get_bd_cells axi_interconnect_1]
+delete_bd_objs [get_bd_intf_nets Cortex_M3_0_CM3_CODE_AXI3]
+connect_bd_net [get_bd_pins Cortex_M3_0/SYSRESETREQ] [get_bd_pins axi_interconnect_1/ACLK]
+delete_bd_objs [get_bd_nets Cortex_M3_0_SYSRESETREQ]
+connect_bd_intf_net [get_bd_intf_pins Cortex_M3_0/CM3_CODE_AXI3] -boundary_type upper [get_bd_intf_pins axi_interconnect_1/S00_AXI]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_1/M00_AXI] [get_bd_intf_pins daplink_if_0/C_AXI]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 axi_bram_ctrl_1
+endgroup
+set_property -dict [list CONFIG.SINGLE_PORT_BRAM {1}] [get_bd_cells axi_bram_ctrl_1]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi_bram_ctrl_1/BRAM_PORTA]
+endgroup
+delete_bd_objs [get_bd_intf_nets axi_bram_ctrl_1_BRAM_PORTA]
+undo
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_1/M01_AXI] [get_bd_intf_pins axi_bram_ctrl_1/S_AXI]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/Clocks_and_Resets/clk_wiz_0/clk_out1 (50 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_bram_ctrl_1/s_axi_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/Clocks_and_Resets/clk_wiz_0/clk_out1 (50 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_interconnect_1/ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/Clocks_and_Resets/clk_wiz_0/clk_out1 (50 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_interconnect_1/M00_ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/Clocks_and_Resets/clk_wiz_0/clk_out1 (50 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_interconnect_1/S00_ACLK]
+endgroup
+regenerate_bd_layout
+assign_bd_address
+validate_bd_design
+save_bd_design
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 axi_bram_ctrl_2
+endgroup
+delete_bd_objs [get_bd_cells axi_bram_ctrl_2]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 axi_bram_ctrl_2
+endgroup
+delete_bd_objs [get_bd_cells axi_bram_ctrl_2]
+delete_bd_objs [get_bd_intf_nets axi_bram_ctrl_1_BRAM_PORTA]
+delete_bd_objs [get_bd_intf_ports BRAM_PORTA_0]
+startgroup
+make_bd_pins_external  [get_bd_cells axi_bram_ctrl_1]
+make_bd_intf_pins_external  [get_bd_cells axi_bram_ctrl_1]
+endgroup
+validate_bd_design
+startgroup
+set_property -dict [list CONFIG.PROTOCOL {AXI4}] [get_bd_cells axi_bram_ctrl_1]
+endgroup
+startgroup
+set_property -dict [list CONFIG.PROTOCOL {AXI4LITE}] [get_bd_cells axi_bram_ctrl_1]
+endgroup
+validate_bd_design
+startgroup
+set_property -dict [list CONFIG.SI_PROTOCOL.VALUE_SRC USER CONFIG.MI_PROTOCOL.VALUE_SRC USER] [get_bd_cells daplink_if_0/axi_protocol_convert_0]
+set_property -dict [list CONFIG.SI_PROTOCOL {AXI4LITE} CONFIG.MI_PROTOCOL {AXI4} CONFIG.TRANSLATION_MODE {2}] [get_bd_cells daplink_if_0/axi_protocol_convert_0]
+endgroup
+validate_bd_design
+startgroup
+set_property -dict [list CONFIG.SI_PROTOCOL.VALUE_SRC USER CONFIG.MI_PROTOCOL.VALUE_SRC USER] [get_bd_cells daplink_if_0/axi_protocol_convert_0]
+set_property -dict [list CONFIG.SI_PROTOCOL {AXI4LITE} CONFIG.MI_PROTOCOL {AXI4} CONFIG.TRANSLATION_MODE {2}] [get_bd_cells daplink_if_0/axi_protocol_convert_0]
+endgroup
+save_bd_design
+validate_bd_design
+update_ip_catalog -rebuild
+validate_bd_design -force
+startgroup
+set_property -dict [list CONFIG.ENABLE_ADVANCED_OPTIONS {0}] [get_bd_cells axi_interconnect_1]
+endgroup
+make_wrapper -files [get_files /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/m3_for_arty_a7.bd] -top
+add_files -norecurse /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/hdl/m3_for_arty_a7_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+generate_target all [get_files /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/m3_for_arty_a7.bd]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1

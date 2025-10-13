@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# updatemem v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Sep 22 16:40:30 2025
+# Process ID: 50465
+# Current directory: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7
+# Command line: updatemem -mode batch -source /home/arjun/tool/Vivado/2022.1/scripts/updatemem/main.tcl -notrace -tclargs -meminfo m3.mmi -data hello.mem -proc dummy -bit m3_for_arty_a7_reference.bit -out updated.bit
+# Log file: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/updatemem.log
+# Journal file: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/updatemem.jou
+# Running On: arjun-Aspire-A315-59, OS: Linux, CPU Frequency: 1798.955 MHz, CPU Physical cores: 10, Host memory: 7483 MB
+#-----------------------------------------------------------
+source /home/arjun/tool/Vivado/2022.1/scripts/updatemem/main.tcl -notrace

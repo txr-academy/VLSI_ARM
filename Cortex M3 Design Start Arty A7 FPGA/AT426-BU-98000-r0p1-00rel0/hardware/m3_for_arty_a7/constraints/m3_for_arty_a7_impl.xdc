@@ -33,7 +33,7 @@
 # JTAG connected to PMOD connector JC (nearest to device)
 # Pin-out is detailed below
 # JC1_P.  JC[1]
-set_property PACKAGE_PIN U12 [get_ports TDO[0]]
+set_property PACKAGE_PIN U12 [get_ports {TDO[0]}]
 # JC1_N.  JC[2]
 set_property PACKAGE_PIN V12 [get_ports TDI]
 # JC2_P.  JC[3]
@@ -125,4 +125,6 @@ set_property CONFIG_VOLTAGE 3.3 [current_design]
 # Bitstream generation
 # --------------------------------------------------
 set_property BITSTREAM.CONFIG.SPI_BUSWIDTH 4 [current_design]
+
+
 

@@ -11,6 +11,7 @@
  *
  * Copyright (c) 2013 KEIL - An ARM Company. All rights reserved.
  *----------------------------------------------------------------------------*/
+ #define ARTY_CM3
 
 #ifndef __DEVICE_H
 #define __DEVICE_H

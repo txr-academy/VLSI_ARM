@@ -1,0 +1,98 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Addressing View_Layers":"/Clocks_and_Resets/clk_wiz_0_clk_out2:false|/Clocks_and_Resets/proc_sys_reset_DAPLink_peripheral_aresetn:false|/Clocks_and_Resets/proc_sys_reset_base_interconnect_aresetn:false|/axi_uartlite_0_interrupt:false|/daplink_if_0/axi_quad_spi_1_ip2intc_irpt:false|/reset_1:false|/axi_gpio_0_ip2intc_irpt:false|/Clocks_and_Resets/proc_sys_reset_DAPLink_mb_reset:false|/sys_clock_1:false|/axi_gpio_1_ip2intc_irpt:false|/axi_quad_spi_0_ip2intc_irpt:false|/Clocks_and_Resets/proc_sys_reset_base_mb_reset:false|/daplink_if_0/axi_xip_quad_spi_0_ip2intc_irpt:false|/Clocks_and_Resets/clk_wiz_0_clk_out1:false|/daplink_if_0/axi_single_spi_0_ip2intc_irpt:false|/Clocks_and_Resets/proc_sys_reset_DAPLink_interconnect_aresetn:false|/Clocks_and_Resets/proc_sys_reset_base_peripheral_aresetn:false|",
+   "Addressing View_ScaleFactor":"0.644156",
+   "Addressing View_TopLeft":"-387,0",
+   "Default View_Layers":"/Clocks_and_Resets/clk_wiz_0_clk_out2:true|/Clocks_and_Resets/proc_sys_reset_DAPLink_peripheral_aresetn:true|/Clocks_and_Resets/proc_sys_reset_base_interconnect_aresetn:true|/axi_uartlite_0_interrupt:true|/daplink_if_0/axi_quad_spi_1_ip2intc_irpt:true|/reset_1:true|/axi_gpio_0_ip2intc_irpt:true|/Clocks_and_Resets/proc_sys_reset_DAPLink_mb_reset:true|/sys_clock_1:true|/axi_gpio_1_ip2intc_irpt:true|/axi_quad_spi_0_ip2intc_irpt:true|/Clocks_and_Resets/proc_sys_reset_base_mb_reset:true|/daplink_if_0/axi_xip_quad_spi_0_ip2intc_irpt:true|/Clocks_and_Resets/clk_wiz_0_clk_out1:true|/daplink_if_0/axi_single_spi_0_ip2intc_irpt:true|/Clocks_and_Resets/proc_sys_reset_DAPLink_interconnect_aresetn:true|/Clocks_and_Resets/proc_sys_reset_base_peripheral_aresetn:true|",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"308,699",
+   "Display-PortTypeClock":"true",
+   "Display-PortTypeInterrupt":"true",
+   "Display-PortTypeOthers":"true",
+   "Display-PortTypeReset":"true",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port DAPLink -pg 1 -lvl 7 -x 3320 -y 260 -defaultsOSRD
+preplace port dip_switches_4bits -pg 1 -lvl 7 -x 3320 -y 770 -defaultsOSRD
+preplace port led_4bits -pg 1 -lvl 7 -x 3320 -y 740 -defaultsOSRD
+preplace port push_buttons_4bits -pg 1 -lvl 7 -x 3320 -y 940 -defaultsOSRD
+preplace port qspi_flash -pg 1 -lvl 7 -x 3320 -y 1230 -defaultsOSRD
+preplace port rgb_led -pg 1 -lvl 7 -x 3320 -y 800 -defaultsOSRD
+preplace port usb_uart -pg 1 -lvl 7 -x 3320 -y 230 -defaultsOSRD
+preplace port BRAM_PORTA_0 -pg 1 -lvl 7 -x 3320 -y 80 -defaultsOSRD
+preplace port port-id_sys_clock -pg 1 -lvl 0 -x 0 -y 850 -defaultsOSRD
+preplace port port-id_TDI -pg 1 -lvl 0 -x 0 -y 1040 -defaultsOSRD
+preplace port port-id_nTRST -pg 1 -lvl 0 -x 0 -y 1010 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x 0 -y 890 -defaultsOSRD
+preplace portBus TDO -pg 1 -lvl 7 -x 3320 -y 860 -defaultsOSRD
+preplace inst Clocks_and_Resets -pg 1 -lvl 2 -x 420 -y 860 -defaultsOSRD
+preplace inst daplink_if_0 -pg 1 -lvl 5 -x 1790 -y 422 -defaultsOSRD
+preplace inst Cortex_M3_0 -pg 1 -lvl 3 -x 910 -y 940 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 5 -x 1790 -y 1714 -defaultsOSRD
+preplace inst axi_bram_ctrl_1 -pg 1 -lvl 5 -x 1790 -y 130 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 5 -x 1790 -y 1394 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 5 -x 1790 -y 1554 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 4 -x 1380 -y 640 -defaultsOSRD
+preplace inst axi_interconnect_1 -pg 1 -lvl 4 -x 1380 -y 280 -defaultsOSRD
+preplace inst axi_quad_spi_0 -pg 1 -lvl 5 -x 1790 -y 1870 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 5 -x 1790 -y 1184 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 6 -x 3180 -y 1090 -defaultsOSRD
+preplace inst tri_io_buf_0 -pg 1 -lvl 6 -x 3180 -y 870 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 2 -x 420 -y 590 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 2 -x 420 -y 1110 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 1 -x 100 -y 1120 -defaultsOSRD
+preplace netloc Clocks_and_Resets_dbgresetn 1 2 1 620 880n
+preplace netloc Clocks_and_Resets_peripheral_aresetn1 1 2 3 600 410 1110 140 1650J
+preplace netloc Clocks_and_Resets_sysresetn 1 2 1 N 860
+preplace netloc CortexM3DbgAXI_0_TDO 1 3 3 1230J 950 1630J 860 N
+preplace netloc CortexM3DbgAXI_0_nTDOEN 1 3 3 1200J 930 1650J 890 2020
+preplace netloc TDI_1 1 0 3 NJ 1040 NJ 1040 NJ
+preplace netloc TDO_out 1 6 1 NJ 860
+preplace netloc V2C_DAPLink_interface_DAPLink_fittedn 1 1 5 220 1000 700J 760 1160J 880 NJ 880 1970
+preplace netloc V2C_DAPLink_interface_qspi_irq 1 1 5 210 420 NJ 420 NJ 420 1550J 262 1960
+preplace netloc V2C_DAPLink_interface_qspi_xip_irq 1 1 5 250 970 630J 700 1210J 870 NJ 870 1930
+preplace netloc V2C_DAPLink_interface_spi_irq 1 1 5 210 990 650J 710 1200J 860 1600J 850 1940
+preplace netloc V2C_DAPLink_interface_uart_rxd_axi 1 5 1 1960 412n
+preplace netloc axi_gpio_0_ip2intc_irpt 1 1 5 230 720 610J 730 1140J 940 NJ 940 1940
+preplace netloc axi_gpio_1_ip2intc_irpt 1 1 5 240 730 590J 740 1120J 960 NJ 960 1930
+preplace netloc axi_quad_spi_0_ip2intc_irpt 1 1 5 200 980 690J 750 1150J 900 NJ 900 1970
+preplace netloc axi_uartlite_0_interrupt 1 1 5 190 740 620J 720 1190J 910 NJ 910 1950
+preplace netloc axi_uartlite_0_tx 1 4 2 1650 272 1990
+preplace netloc clk_wiz_0_clk_out1 1 2 3 640 680 1220 130 1580
+preplace netloc daplink_if_0_nSRST 1 1 5 180 50 NJ 50 NJ 50 NJ 50 1980
+preplace netloc ext_spi_clk_1 1 2 3 660J 770 1130J 890 1640
+preplace netloc nTRST_1 1 0 3 NJ 1010 NJ 1010 650J
+preplace netloc proc_sys_reset_1_interconnect_aresetn 1 2 3 670J 780 1110J 920 1620
+preplace netloc proc_sys_reset_1_peripheral_aresetn 1 2 2 580J 690 1230
+preplace netloc reset_1 1 0 2 NJ 890 NJ
+preplace netloc sys_clock_1 1 0 2 NJ 850 NJ
+preplace netloc xlconcat_0_dout 1 2 1 680 590n
+preplace netloc xlconcat_1_dout 1 2 1 710 920n
+preplace netloc xlconstant_1_dout 1 1 1 NJ 1120
+preplace netloc Cortex_M3_0_CM3_CODE_AXI3 1 3 1 1170 200n
+preplace netloc Cortex_M3_0_CM3_SYS_AXI3 1 3 1 1180 480n
+preplace netloc S_AXI_1 1 4 1 1560 352n
+preplace netloc V2C_DAPLink_interface_Shield_out 1 5 2 2050J 260 NJ
+preplace netloc V2C_DAPLink_interface_UART_out 1 5 2 2030J 230 NJ
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 5 1 2050J 1090n
+preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 5 2 2050J 80 NJ
+preplace netloc axi_gpio_0_GPIO 1 5 2 2000J 740 NJ
+preplace netloc axi_gpio_0_GPIO2 1 5 2 2010J 770 NJ
+preplace netloc axi_gpio_1_GPIO 1 5 2 2030J 800 NJ
+preplace netloc axi_gpio_1_GPIO2 1 5 2 2040J 940 NJ
+preplace netloc axi_interconnect_0_M00_AXI 1 4 1 1610 590n
+preplace netloc axi_interconnect_0_M01_AXI 1 4 1 1590 610n
+preplace netloc axi_interconnect_0_M02_AXI 1 4 1 1570 630n
+preplace netloc axi_interconnect_0_M03_AXI 1 4 1 1550 650n
+preplace netloc axi_interconnect_0_M04_AXI 1 4 1 1530 670n
+preplace netloc axi_interconnect_1_M00_AXI 1 4 1 1540 270n
+preplace netloc axi_interconnect_1_M01_AXI 1 4 1 1530 110n
+preplace netloc axi_quad_spi_0_SPI_0 1 5 2 2060J 1230 NJ
+levelinfo -pg 1 0 100 420 910 1380 1790 3180 3320
+pagesize -pg 1 -db -bbox -sgen -110 0 3500 2010
+"
+}
+{
+   "da_clkrst_cnt":"4"
+}
