@@ -35,6 +35,7 @@ This macro maps the standard inline keyword to the compiler’s expected __inlin
 
 Fix any other missing macros or definitions as needed for your build environment.
 
+
 Building Firmware and Generating Hex File
 Build your code in Keil MDK, which produces .axf and .hex files under the AT426-BU-98000-r0p1-00rel0/software/m3_for_arty_a7/Build_Keil/objects
 
@@ -66,5 +67,8 @@ Use the dedicated HEX conversion process (fromelf via batch scripts) to ensure c
 NOTE :
 
 https://youtu.be/Gh8mqKlYOW4 to install ARM COMPILER SUITABLE VERSION CHECK THIS LINK
+
+
+![alt text](http://url/to/img.png)
 
 
