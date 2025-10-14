@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
-| Date                      : Sat Oct 11 21:26:19 2025
+| Date                      : Tue Oct 14 15:07:26 2025
 | Host                      : arjun-Aspire-A315-59 running 64-bit Ubuntu 24.10
 | Command                   : report_io -file m3_for_arty_a7_wrapper_io_placed.rpt
 | Design                    : m3_for_arty_a7_wrapper

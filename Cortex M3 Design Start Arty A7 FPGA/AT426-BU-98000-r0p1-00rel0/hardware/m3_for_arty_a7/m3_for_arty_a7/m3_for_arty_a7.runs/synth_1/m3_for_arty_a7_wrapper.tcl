@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 1
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 set_msg_config  -id {[BD 41-1271]}  -suppress 
 set_msg_config  -id {[BD 41-1306]}  -suppress 
@@ -96,7 +97,7 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 add_files /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/main.elf
 read_mem {
-  /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/arm_cust.hex
+  /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/arm_custom_hello.hex
   /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/m3_for_arty_a7.srcs/sources_1/new/dummy.mem
 }
 read_verilog -library xil_defaultlib {
@@ -135,8 +136,6 @@ set_property used_in_implementation false [get_files -all /home/arjun/Vivado_PRO
 set_property used_in_implementation false [get_files -all /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_axi_gpio_1_0/m3_for_arty_a7_axi_gpio_1_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_axi_gpio_1_0/m3_for_arty_a7_axi_gpio_1_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_axi_gpio_1_0/m3_for_arty_a7_axi_gpio_1_0.xdc]
-set_property used_in_implementation false [get_files -all /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_auto_pc_0/m3_for_arty_a7_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_auto_pc_1/m3_for_arty_a7_auto_pc_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_axi_quad_spi_0_0/m3_for_arty_a7_axi_quad_spi_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_axi_quad_spi_0_0/m3_for_arty_a7_axi_quad_spi_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_axi_quad_spi_0_0/m3_for_arty_a7_axi_quad_spi_0_0_ooc.xdc]
@@ -145,6 +144,8 @@ set_property used_in_implementation false [get_files -all /home/arjun/Vivado_PRO
 set_property used_in_implementation false [get_files -all /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_axi_uartlite_0_0/m3_for_arty_a7_axi_uartlite_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_axi_uartlite_0_0/m3_for_arty_a7_axi_uartlite_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_blk_mem_gen_0_0/m3_for_arty_a7_blk_mem_gen_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_auto_pc_0/m3_for_arty_a7_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_auto_pc_1/m3_for_arty_a7_auto_pc_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/m3_for_arty_a7_ooc.xdc]
 
 OPTRACE "Adding files" END { }

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Oct 11 21:12:46 2025" VIVADOVERSION="2022.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Oct 13 13:20:19 2025" VIVADOVERSION="2022.1">
 
   <SYSTEMINFO ARCH="artix7" BOARD="digilentinc.com:arty-a7-100:part0:1.1" DEVICE="7a100t" NAME="m3_for_arty_a7" PACKAGE="csg324" SPEEDGRADE="-1"/>
 
@@ -1210,7 +1210,7 @@
         <PARAMETER NAME="DTCM_SIZE" VALUE="&quot;0110&quot;"/>
         <PARAMETER NAME="ITCM_INIT_RAM" VALUE="true"/>
         <PARAMETER NAME="DTCM_INIT_RAM" VALUE="true"/>
-        <PARAMETER NAME="ITCM_INIT_FILE" VALUE="arm_cust.hex"/>
+        <PARAMETER NAME="ITCM_INIT_FILE" VALUE="arm_custom_hello.hex"/>
         <PARAMETER NAME="DTCM_INIT_FILE"/>
         <PARAMETER NAME="AUSER_WIDTH" VALUE="1"/>
         <PARAMETER NAME="AUSER_MAX" VALUE="0"/>

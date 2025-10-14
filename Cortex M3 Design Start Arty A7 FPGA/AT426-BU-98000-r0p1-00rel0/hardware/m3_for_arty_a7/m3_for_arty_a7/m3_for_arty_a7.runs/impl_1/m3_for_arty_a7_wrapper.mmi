@@ -11,7 +11,7 @@
 <MemInfo Version="1" Minor="9">
   <MemoryArray InstPath="xpm_memory_spram_inst/xpm_memory_base_inst" MemoryPrimitive="block" MemoryConfiguration="enabled_configuration">
     <MemoryLayout Name="xpm_memory_spram_inst/xpm_memory_base_inst" CoreMemory_Width="32" MemoryType="RAM_SP">
-      <BRAM MemType="RAMB36" Placement="X1Y9" Read_Width_A="4" Read_Width_B="4" SLR_INDEX="0">
+      <BRAM MemType="RAMB36" Placement="X2Y1" Read_Width_A="4" Read_Width_B="4" SLR_INDEX="0">
         <DataWidth_PortA MSB="3" LSB="0"/>
         <AddressRange_PortA Begin="0" End="8191"/>
         <BitLayout_PortA pattern="p0_d4"/>
@@ -20,7 +20,7 @@
         <BitLayout_PortB pattern="p0_d4"/>
         <Parity ON="false" NumBits="0"/>
       </BRAM>
-      <BRAM MemType="RAMB36" Placement="X2Y2" Read_Width_A="4" Read_Width_B="4" SLR_INDEX="0">
+      <BRAM MemType="RAMB36" Placement="X1Y1" Read_Width_A="4" Read_Width_B="4" SLR_INDEX="0">
         <DataWidth_PortA MSB="7" LSB="4"/>
         <AddressRange_PortA Begin="0" End="8191"/>
         <BitLayout_PortA pattern="p0_d4"/>
@@ -29,7 +29,7 @@
         <BitLayout_PortB pattern="p0_d4"/>
         <Parity ON="false" NumBits="0"/>
       </BRAM>
-      <BRAM MemType="RAMB36" Placement="X2Y5" Read_Width_A="4" Read_Width_B="4" SLR_INDEX="0">
+      <BRAM MemType="RAMB36" Placement="X0Y0" Read_Width_A="4" Read_Width_B="4" SLR_INDEX="0">
         <DataWidth_PortA MSB="11" LSB="8"/>
         <AddressRange_PortA Begin="0" End="8191"/>
         <BitLayout_PortA pattern="p0_d4"/>
@@ -38,7 +38,7 @@
         <BitLayout_PortB pattern="p0_d4"/>
         <Parity ON="false" NumBits="0"/>
       </BRAM>
-      <BRAM MemType="RAMB36" Placement="X2Y6" Read_Width_A="4" Read_Width_B="4" SLR_INDEX="0">
+      <BRAM MemType="RAMB36" Placement="X0Y3" Read_Width_A="4" Read_Width_B="4" SLR_INDEX="0">
         <DataWidth_PortA MSB="15" LSB="12"/>
         <AddressRange_PortA Begin="0" End="8191"/>
         <BitLayout_PortA pattern="p0_d4"/>
@@ -47,7 +47,7 @@
         <BitLayout_PortB pattern="p0_d4"/>
         <Parity ON="false" NumBits="0"/>
       </BRAM>
-      <BRAM MemType="RAMB36" Placement="X2Y7" Read_Width_A="4" Read_Width_B="4" SLR_INDEX="0">
+      <BRAM MemType="RAMB36" Placement="X1Y0" Read_Width_A="4" Read_Width_B="4" SLR_INDEX="0">
         <DataWidth_PortA MSB="19" LSB="16"/>
         <AddressRange_PortA Begin="0" End="8191"/>
         <BitLayout_PortA pattern="p0_d4"/>
@@ -56,7 +56,7 @@
         <BitLayout_PortB pattern="p0_d4"/>
         <Parity ON="false" NumBits="0"/>
       </BRAM>
-      <BRAM MemType="RAMB36" Placement="X2Y4" Read_Width_A="4" Read_Width_B="4" SLR_INDEX="0">
+      <BRAM MemType="RAMB36" Placement="X1Y2" Read_Width_A="4" Read_Width_B="4" SLR_INDEX="0">
         <DataWidth_PortA MSB="23" LSB="20"/>
         <AddressRange_PortA Begin="0" End="8191"/>
         <BitLayout_PortA pattern="p0_d4"/>
@@ -65,7 +65,7 @@
         <BitLayout_PortB pattern="p0_d4"/>
         <Parity ON="false" NumBits="0"/>
       </BRAM>
-      <BRAM MemType="RAMB36" Placement="X2Y8" Read_Width_A="4" Read_Width_B="4" SLR_INDEX="0">
+      <BRAM MemType="RAMB36" Placement="X0Y4" Read_Width_A="4" Read_Width_B="4" SLR_INDEX="0">
         <DataWidth_PortA MSB="27" LSB="24"/>
         <AddressRange_PortA Begin="0" End="8191"/>
         <BitLayout_PortA pattern="p0_d4"/>
@@ -74,7 +74,7 @@
         <BitLayout_PortB pattern="p0_d4"/>
         <Parity ON="false" NumBits="0"/>
       </BRAM>
-      <BRAM MemType="RAMB36" Placement="X1Y10" Read_Width_A="4" Read_Width_B="4" SLR_INDEX="0">
+      <BRAM MemType="RAMB36" Placement="X0Y1" Read_Width_A="4" Read_Width_B="4" SLR_INDEX="0">
         <DataWidth_PortA MSB="31" LSB="28"/>
         <AddressRange_PortA Begin="0" End="8191"/>
         <BitLayout_PortA pattern="p0_d4"/>

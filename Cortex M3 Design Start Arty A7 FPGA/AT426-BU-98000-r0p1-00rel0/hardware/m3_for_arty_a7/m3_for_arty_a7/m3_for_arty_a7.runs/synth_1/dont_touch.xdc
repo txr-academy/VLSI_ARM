@@ -79,17 +79,11 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==m3_for_arty
 # IP: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_xbar_3/m3_for_arty_a7_xbar_3.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==m3_for_arty_a7_xbar_3 || ORIG_REF_NAME==m3_for_arty_a7_xbar_3} -quiet] -quiet
 
-# IP: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_auto_pc_0/m3_for_arty_a7_auto_pc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==m3_for_arty_a7_auto_pc_0 || ORIG_REF_NAME==m3_for_arty_a7_auto_pc_0} -quiet] -quiet
-
 # IP: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_axi_interconnect_0_0/m3_for_arty_a7_axi_interconnect_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==m3_for_arty_a7_axi_interconnect_0_0 || ORIG_REF_NAME==m3_for_arty_a7_axi_interconnect_0_0} -quiet] -quiet
 
 # IP: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_xbar_5/m3_for_arty_a7_xbar_5.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==m3_for_arty_a7_xbar_5 || ORIG_REF_NAME==m3_for_arty_a7_xbar_5} -quiet] -quiet
-
-# IP: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_auto_pc_1/m3_for_arty_a7_auto_pc_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==m3_for_arty_a7_auto_pc_1 || ORIG_REF_NAME==m3_for_arty_a7_auto_pc_1} -quiet] -quiet
 
 # IP: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_axi_interconnect_1_0/m3_for_arty_a7_axi_interconnect_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==m3_for_arty_a7_axi_interconnect_1_0 || ORIG_REF_NAME==m3_for_arty_a7_axi_interconnect_1_0} -quiet] -quiet
@@ -114,6 +108,12 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==m3_for_arty
 
 # IP: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_xlconstant_1_1/m3_for_arty_a7_xlconstant_1_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==m3_for_arty_a7_xlconstant_1_1 || ORIG_REF_NAME==m3_for_arty_a7_xlconstant_1_1} -quiet] -quiet
+
+# IP: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_auto_pc_0/m3_for_arty_a7_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==m3_for_arty_a7_auto_pc_0 || ORIG_REF_NAME==m3_for_arty_a7_auto_pc_0} -quiet] -quiet
+
+# IP: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_auto_pc_1/m3_for_arty_a7_auto_pc_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==m3_for_arty_a7_auto_pc_1 || ORIG_REF_NAME==m3_for_arty_a7_auto_pc_1} -quiet] -quiet
 
 # XDC: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_clk_wiz_0_0/m3_for_arty_a7_clk_wiz_0_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==m3_for_arty_a7_clk_wiz_0_0 || ORIG_REF_NAME==m3_for_arty_a7_clk_wiz_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
@@ -200,10 +200,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 # XDC: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_axi_gpio_1_0/m3_for_arty_a7_axi_gpio_1_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==m3_for_arty_a7_axi_gpio_1_0 || ORIG_REF_NAME==m3_for_arty_a7_axi_gpio_1_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_auto_pc_0/m3_for_arty_a7_auto_pc_0_ooc.xdc
-
-# XDC: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_auto_pc_1/m3_for_arty_a7_auto_pc_1_ooc.xdc
-
 # XDC: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_axi_quad_spi_0_0/m3_for_arty_a7_axi_quad_spi_0_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==m3_for_arty_a7_axi_quad_spi_0_0 || ORIG_REF_NAME==m3_for_arty_a7_axi_quad_spi_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
@@ -224,5 +220,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==m3_for_arty_a7_axi_uartlite_0_0 || ORIG_REF_NAME==m3_for_arty_a7_axi_uartlite_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_blk_mem_gen_0_0/m3_for_arty_a7_blk_mem_gen_0_0_ooc.xdc
+
+# XDC: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_auto_pc_0/m3_for_arty_a7_auto_pc_0_ooc.xdc
+
+# XDC: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_auto_pc_1/m3_for_arty_a7_auto_pc_1_ooc.xdc
 
 # XDC: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/m3_for_arty_a7_ooc.xdc

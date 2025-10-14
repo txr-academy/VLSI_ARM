@@ -1502,7 +1502,7 @@
             "value": "\"0110\""
           },
           "ITCM_INIT_FILE": {
-            "value": "arm_cust.hex"
+            "value": "arm_custom_hello.hex"
           },
           "ITCM_INIT_RAM": {
             "value": "true"
