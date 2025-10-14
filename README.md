@@ -47,7 +47,7 @@ Use the provided make_hex_a7.bat script or the fromelf utility to convert the .a
 This properly formatted HEX file (bram_a7.hex) is used by Vivado for ITCM memory initialization.
 
 FPGA Bitstream Generation and Loading Firmware
-Copy the correctly formatted HEX file into your Vivado project directory.
+Copy the correctly formatted HEX file into your Vivado project directory(inside hardware/m3_for_arty_a7/m3_for_arty_a7).
 
 Load the HEX file into the ITCM memory using Vivado IP configurator.
 
@@ -67,6 +67,11 @@ Use the dedicated HEX conversion process (fromelf via batch scripts) to ensure c
 NOTE :
 
 https://youtu.be/Gh8mqKlYOW4 to install ARM COMPILER SUITABLE VERSION CHECK THIS LINK
+
+
+GIVEN BELOW ARE THE BLOCK DIAGRAM AND ADDRESS RANGE OF THE HARDWARE DESIGN. THE SYSTEM IS ALSO EQUIPPED WITH AN XPM MEMORY THAT IS PLACED IN THE WRAPPER MODULE TYING PORTS WITH A BRAM CONTROLLER THATS GIVEN TO AN AXI INTERCONNECT COMMON TO DAPLINK BOARD BOTH CONNECTED TO CODE AXI
+
+![BLOCK DIAGRAM](https://github.com/txr-academy/VLSI_ARM/blob/a6d89c26be0f11b53190c8de9e7197f1a8a5504e/BLOCK%20DIAGRAM.png)
 
 
 ![ADDRESS RANGE](https://github.com/txr-academy/VLSI_ARM/blob/030d3d755a39893a04ab8d825bd13d81f77ac91f/ADDRESS%20RANGE.png)
