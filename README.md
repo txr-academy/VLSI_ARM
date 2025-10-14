@@ -40,9 +40,10 @@ Build your code in Keil MDK, which produces .axf and .hex files under the AT426-
 
 The raw Keil-generated .hex file is not compatible for FPGA memory initialization.
 
-Use the provided make_hex_a7.bat script or the fromelf utility to convert the .axf into a proper Intel HEX file produced in the build_keil/ directory. The hex file needed for memory initialzation will automatically form in Build_keil Folder once .bat is executed automatically after program is build
+Use the provided make_hex_a7.bat script or the fromelf utility to convert the .axf into a proper Intel HEX file produced in the build_keil/ directory.
+. CHANGE THE LCOATION OF THE FROMELF LOCATION ACCORDING TO THE LOCATION WHERE YOU DOWLOAD THE ARM COMPILER (EG: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\bin\fromelf.exe") The hex file needed for memory initialzation will automatically form in Build_keil Folder once "make_hex_a7.bat" is executed automatically after program is build
 
-This properly formatted HEX file (bram_a7.hex) is used by Vivado for XPM memory initialization.
+This properly formatted HEX file (bram_a7.hex) is used by Vivado for ITCM memory initialization.
 
 FPGA Bitstream Generation and Loading Firmware
 Copy the correctly formatted HEX file into your Vivado project directory.
@@ -61,3 +62,9 @@ Always modify parameter files or regenerate the SDK BSP files if you modify the 
 ARM Compiler version 5 is required for the legacy DesignStart firmware; other modern compilers will require code changes.
 
 Use the dedicated HEX conversion process (fromelf via batch scripts) to ensure compatible memory initialization files.
+
+NOTE :
+
+https://youtu.be/Gh8mqKlYOW4 to install ARM COMPILER SUITABLE VERSION CHECK THIS LINK
+
+
