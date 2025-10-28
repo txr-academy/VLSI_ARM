@@ -2,18 +2,18 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Mon Oct 13 13:20:52 2025
-# Process ID: 5745
+# Start of session at: Tue Oct 28 10:17:27 2025
+# Process ID: 5790
 # Current directory: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/m3_for_arty_a7.runs/synth_1
 # Command line: vivado -log m3_for_arty_a7_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source m3_for_arty_a7_wrapper.tcl
 # Log file: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/m3_for_arty_a7.runs/synth_1/m3_for_arty_a7_wrapper.vds
 # Journal file: /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/m3_for_arty_a7.runs/synth_1/vivado.jou
-# Running On: arjun-Aspire-A315-59, OS: Linux, CPU Frequency: 2798.497 MHz, CPU Physical cores: 10, Host memory: 7483 MB
+# Running On: arjun-Aspire-A315-59, OS: Linux, CPU Frequency: 400.000 MHz, CPU Physical cores: 10, Host memory: 7483 MB
 #-----------------------------------------------------------
 source m3_for_arty_a7_wrapper.tcl -notrace
 WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
 WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2876.305 ; gain = 23.965 ; free physical = 990 ; free virtual = 5738
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2884.328 ; gain = 31.965 ; free physical = 1077 ; free virtual = 5301
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/vivado/Arm_ipi_repository'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/arjun/tool/Vivado/2022.1/data/ip'.
@@ -26,12 +26,12 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 5819
+INFO: [Synth 8-7075] Helper process launched with PID 5866
 WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [/home/arjun/tool/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3236.480 ; gain = 0.000 ; free physical = 1123 ; free virtual = 4806
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3244.504 ; gain = 0.000 ; free physical = 1059 ; free virtual = 4337
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'm3_for_arty_a7_wrapper' [/home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/hdl/m3_for_arty_a7_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'm3_for_arty_a7_wrapper' [/home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/hdl/m3_for_arty_a7_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'm3_for_arty_a7' [/home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/synth/m3_for_arty_a7.v:2491]
 INFO: [Synth 8-6157] synthesizing module 'Clocks_and_Resets_imp_1WLR2TP' [/home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/synth/m3_for_arty_a7.v:12]
 INFO: [Synth 8-6157] synthesizing module 'm3_for_arty_a7_clk_wiz_0_0' [/home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ip/m3_for_arty_a7_clk_wiz_0_0/m3_for_arty_a7_clk_wiz_0_0.v:69]
@@ -1658,7 +1658,7 @@ WARNING: [Synth 8-7023] instance 'tri_io_buf_0' of module 'm3_for_arty_a7_tri_io
 WARNING: [Synth 8-6060] Synth Warning: [XPM_MEMORY 30-16] MEMORY_SIZE (262144), WRITE_DATA_WIDTH_A (32), and ADDR_WIDTH_A (15) together imply that the addressable range exceeds the memory size for this configuration which uses port A write operations.   [/home/arjun/tool/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:534]
 WARNING: [Synth 8-6060] Synth Warning: [XPM_MEMORY 30-17] MEMORY_SIZE (262144), READ_DATA_WIDTH_A (32), and ADDR_WIDTH_A (15) together imply that the addressable range exceeds the memory size for this configuration which uses port A read operations.   [/home/arjun/tool/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:536]
 INFO: [Synth 8-3876] $readmem data file 'dummy.mem' is read successfully [/home/arjun/tool/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:1132]
-WARNING: [Synth 8-689] width (4) of port connection 'wea' does not match port width (1) of module 'xpm_memory_spram' [/home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/hdl/m3_for_arty_a7_wrapper.v:221]
+WARNING: [Synth 8-689] width (4) of port connection 'wea' does not match port width (1) of module 'xpm_memory_spram' [/home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/hdl/m3_for_arty_a7_wrapper.v:220]
 WARNING: [Synth 8-6014] Unused sequential element GEN_NO_RD_CMD_OPT.axi_arready_reg_reg was removed.  [/home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ipshared/3c31/hdl/axi_bram_ctrl_v4_1_rfs.vhd:8429]
 WARNING: [Synth 8-6014] Unused sequential element GEN_NO_RD_CMD_OPT.axi_rvalid_set_r_reg was removed.  [/home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ipshared/3c31/hdl/axi_bram_ctrl_v4_1_rfs.vhd:8430]
 WARNING: [Synth 8-6014] Unused sequential element GEN_NO_RD_CMD_OPT.axi_rlast_set_r_reg was removed.  [/home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/ipshared/3c31/hdl/axi_bram_ctrl_v4_1_rfs.vhd:8431]
@@ -1963,18 +1963,18 @@ WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat__paramet
 WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat__parameterized0 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3236.480 ; gain = 0.000 ; free physical = 932 ; free virtual = 4632
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3244.504 ; gain = 0.000 ; free physical = 938 ; free virtual = 4237
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 3236.480 ; gain = 0.000 ; free physical = 938 ; free virtual = 4638
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 3244.504 ; gain = 0.000 ; free physical = 938 ; free virtual = 4238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 3236.480 ; gain = 0.000 ; free physical = 938 ; free virtual = 4638
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 3244.504 ; gain = 0.000 ; free physical = 938 ; free virtual = 4238
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.39 . Memory (MB): peak = 3238.680 ; gain = 0.000 ; free physical = 948 ; free virtual = 4648
+Netlist sorting complete. Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.38 . Memory (MB): peak = 3244.504 ; gain = 0.000 ; free physical = 934 ; free virtual = 4235
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'm3_for_arty_a7_i/Clocks_and_Resets/clk_wiz_0/inst/clkout1_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'm3_for_arty_a7_i/Clocks_and_Resets/clk_wiz_0/inst/clkout2_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 INFO: [Netlist 29-17] Analyzing 858 Unisim elements for replacement
@@ -2046,8 +2046,6 @@ WARNING: [Vivado 12-507] No nets matched 'm3_for_arty_a7_i/Cortex_M3_0/inst/u_x_
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/m3_for_arty_a7.srcs/constrs_1/new/iola.xdc:2]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [/home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/m3_for_arty_a7.srcs/constrs_1/new/iola.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/m3_for_arty_a7.srcs/constrs_1/new/iola.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/m3_for_arty_a7_wrapper_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/m3_for_arty_a7_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [/home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/m3_for_arty_a7.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/m3_for_arty_a7.runs/synth_1/dont_touch.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/m3_for_arty_a7.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/m3_for_arty_a7_wrapper_propImpl.xdc].
@@ -2069,7 +2067,7 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/m3_for_arty_
 INFO: [Project 1-1714] 49 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3337.477 ; gain = 0.000 ; free physical = 812 ; free virtual = 4530
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3337.500 ; gain = 0.000 ; free physical = 706 ; free virtual = 4042
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 849 instances were transformed.
   BUFGCE => BUFGCTRL: 2 instances
@@ -2079,16 +2077,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   IOBUF => IOBUF (IBUF, OBUFT): 7 instances
   SRL16 => SRL16E: 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 3337.477 ; gain = 0.000 ; free physical = 812 ; free virtual = 4530
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 3337.500 ; gain = 0.000 ; free physical = 706 ; free virtual = 4043
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 3337.477 ; gain = 100.996 ; free physical = 970 ; free virtual = 4723
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 3337.500 ; gain = 92.996 ; free physical = 860 ; free virtual = 4219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 3337.477 ; gain = 100.996 ; free physical = 970 ; free virtual = 4723
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 3337.500 ; gain = 92.996 ; free physical = 860 ; free virtual = 4219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -2219,7 +2217,7 @@ Applied set_property KEEP = true for reset. (constraint file  auto generated con
 Applied set_property KEEP = true for m3_for_arty_a7_i/axi_gpio_1/U0/gpio_core_1/GPIO_IO_O[11]. (constraint file  auto generated constraint).
 Applied set_property KEEP = true for sys_clock. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 3337.477 ; gain = 100.996 ; free physical = 929 ; free virtual = 4702
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 3337.500 ; gain = 92.996 ; free physical = 866 ; free virtual = 4225
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'cm3_dpu_fetch_ctl'
 INFO: [Synth 8-802] inferred FSM for state register 'GEN_NO_RD_CMD_OPT.lite_sm_cs_reg' in module 'axi_lite'
@@ -2622,7 +2620,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_r
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'RATIO_OF_2_GENERATE.XIP_QUAD_MODE_SP_MEM_GEN.qspi_cntrl_ps_reg' using encoding 'one-hot' in module 'axi_qspi_xip_if'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 3337.477 ; gain = 100.996 ; free physical = 592 ; free virtual = 1173
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 3337.500 ; gain = 92.996 ; free physical = 144 ; free virtual = 617
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'm3_for_arty_a7_i/Cortex_M3_0/inst/u_CORTEXM3INTEGRATION/u_cm3_tpiu/u_connect_read_pointer1_gray' (cm3_cdc_connect) to 'm3_for_arty_a7_i/Cortex_M3_0/inst/u_CORTEXM3INTEGRATION/u_cm3_tpiu/u_connect_read_pointer2_gray'
 INFO: [Synth 8-223] decloning instance 'm3_for_arty_a7_i/Cortex_M3_0/inst/u_CORTEXM3INTEGRATION/u_cm3_tpiu/u_connect_write_pointer1_gray' (cm3_cdc_connect) to 'm3_for_arty_a7_i/Cortex_M3_0/inst/u_CORTEXM3INTEGRATION/u_cm3_tpiu/u_connect_write_pointer2_gray'
@@ -2944,7 +2942,7 @@ INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GEN
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio__parameterized1.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:40 ; elapsed = 00:07:31 . Memory (MB): peak = 3790.797 ; gain = 554.316 ; free physical = 831 ; free virtual = 1025
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:50 ; elapsed = 00:10:40 . Memory (MB): peak = 3791.852 ; gain = 547.348 ; free physical = 841 ; free virtual = 1046
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -3001,13 +2999,13 @@ INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'daplink_if_0/axi
 INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'daplink_if_0/axi_single_spi_0/sck_o' to 'm3_for_arty_a7_i/i_0/DAPLink_tri_o[3]'
 INFO: [Synth 8-5819] Moved 3 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:44 ; elapsed = 00:07:36 . Memory (MB): peak = 3790.797 ; gain = 554.316 ; free physical = 664 ; free virtual = 922
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:55 ; elapsed = 00:10:46 . Memory (MB): peak = 3791.852 ; gain = 547.348 ; free physical = 657 ; free virtual = 938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:03:54 ; elapsed = 00:07:46 . Memory (MB): peak = 3790.797 ; gain = 554.316 ; free physical = 481 ; free virtual = 770
+Finished Timing Optimization : Time (s): cpu = 00:04:05 ; elapsed = 00:10:56 . Memory (MB): peak = 3791.852 ; gain = 547.348 ; free physical = 492 ; free virtual = 806
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -3060,7 +3058,7 @@ INFO: [Synth 8-7052] The timing for the instance xpm_memory_spram_inst/xpm_memor
 INFO: [Synth 8-7052] The timing for the instance xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow_wp.mem_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance xpm_memory_spram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow_wp.mem_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:04:00 ; elapsed = 00:07:53 . Memory (MB): peak = 3790.797 ; gain = 554.316 ; free physical = 563 ; free virtual = 855
+Finished Technology Mapping : Time (s): cpu = 00:04:12 ; elapsed = 00:11:04 . Memory (MB): peak = 3791.852 ; gain = 547.348 ; free physical = 520 ; free virtual = 840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -3079,37 +3077,37 @@ WARNING: synth_design option "-fanout_limit" is deprecated.
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:04:03 ; elapsed = 00:07:56 . Memory (MB): peak = 3790.797 ; gain = 554.316 ; free physical = 427 ; free virtual = 871
+Finished IO Insertion : Time (s): cpu = 00:04:14 ; elapsed = 00:11:07 . Memory (MB): peak = 3791.852 ; gain = 547.348 ; free physical = 500 ; free virtual = 864
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:04:03 ; elapsed = 00:07:56 . Memory (MB): peak = 3790.797 ; gain = 554.316 ; free physical = 427 ; free virtual = 871
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:14 ; elapsed = 00:11:07 . Memory (MB): peak = 3791.852 ; gain = 547.348 ; free physical = 500 ; free virtual = 865
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:04 ; elapsed = 00:07:57 . Memory (MB): peak = 3790.797 ; gain = 554.316 ; free physical = 426 ; free virtual = 870
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:15 ; elapsed = 00:11:08 . Memory (MB): peak = 3791.852 ; gain = 547.348 ; free physical = 508 ; free virtual = 873
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:04:04 ; elapsed = 00:07:57 . Memory (MB): peak = 3790.797 ; gain = 554.316 ; free physical = 426 ; free virtual = 870
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:15 ; elapsed = 00:11:08 . Memory (MB): peak = 3791.852 ; gain = 547.348 ; free physical = 507 ; free virtual = 873
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:04:04 ; elapsed = 00:07:57 . Memory (MB): peak = 3790.797 ; gain = 554.316 ; free physical = 426 ; free virtual = 870
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:15 ; elapsed = 00:11:08 . Memory (MB): peak = 3791.852 ; gain = 547.348 ; free physical = 507 ; free virtual = 873
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:04:04 ; elapsed = 00:07:57 . Memory (MB): peak = 3790.797 ; gain = 554.316 ; free physical = 426 ; free virtual = 870
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:15 ; elapsed = 00:11:08 . Memory (MB): peak = 3791.852 ; gain = 547.348 ; free physical = 507 ; free virtual = 873
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -3190,13 +3188,13 @@ Report Cell Usage:
 |39    |OBUF       |    23|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:04:04 ; elapsed = 00:07:57 . Memory (MB): peak = 3790.797 ; gain = 554.316 ; free physical = 425 ; free virtual = 871
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:15 ; elapsed = 00:11:08 . Memory (MB): peak = 3791.852 ; gain = 547.348 ; free physical = 516 ; free virtual = 883
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:03:59 ; elapsed = 00:07:53 . Memory (MB): peak = 3794.707 ; gain = 457.230 ; free physical = 4104 ; free virtual = 5993
-Synthesis Optimization Complete : Time (s): cpu = 00:04:07 ; elapsed = 00:07:59 . Memory (MB): peak = 3794.707 ; gain = 558.227 ; free physical = 4104 ; free virtual = 5997
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:10 ; elapsed = 00:11:06 . Memory (MB): peak = 3795.762 ; gain = 458.262 ; free physical = 4233 ; free virtual = 6088
+Synthesis Optimization Complete : Time (s): cpu = 00:04:19 ; elapsed = 00:11:13 . Memory (MB): peak = 3795.762 ; gain = 551.258 ; free physical = 4233 ; free virtual = 6093
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.18 . Memory (MB): peak = 3794.707 ; gain = 0.000 ; free physical = 4131 ; free virtual = 6041
+Netlist sorting complete. Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.2 . Memory (MB): peak = 3795.762 ; gain = 0.000 ; free physical = 4214 ; free virtual = 6089
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'm3_for_arty_a7_i/Clocks_and_Resets/clk_wiz_0/inst/clkout1_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'm3_for_arty_a7_i/Clocks_and_Resets/clk_wiz_0/inst/clkout2_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 INFO: [Netlist 29-17] Analyzing 799 Unisim elements for replacement
@@ -3205,7 +3203,7 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 WARNING: [Constraints 18-5572] Instance m3_for_arty_a7_i/daplink_if_0/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_12_GEN.SPI_MODE_CONTROL_LOGIC_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
 WARNING: [Constraints 18-5572] Instance m3_for_arty_a7_i/daplink_if_0/axi_xip_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/XIP_MODE_GEN.AXI_QSPI_XIP_I/RATIO_OF_2_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3830.816 ; gain = 0.000 ; free physical = 4099 ; free virtual = 6042
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3831.871 ; gain = 0.000 ; free physical = 4174 ; free virtual = 6070
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 278 instances were transformed.
   BUFGCE => BUFGCTRL: 2 instances
@@ -3216,10 +3214,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 Synth Design complete, checksum: 168e2670
 INFO: [Common 17-83] Releasing license: Synthesis
-848 Infos, 378 Warnings, 5 Critical Warnings and 0 Errors encountered.
+847 Infos, 378 Warnings, 5 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:04:12 ; elapsed = 00:08:05 . Memory (MB): peak = 3830.816 ; gain = 594.336 ; free physical = 4297 ; free virtual = 6276
+synth_design: Time (s): cpu = 00:04:24 ; elapsed = 00:11:19 . Memory (MB): peak = 3831.871 ; gain = 587.367 ; free physical = 4329 ; free virtual = 6281
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint '/home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/m3_for_arty_a7.runs/synth_1/m3_for_arty_a7_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file m3_for_arty_a7_wrapper_utilization_synth.rpt -pb m3_for_arty_a7_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Oct 13 13:29:10 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 28 10:28:58 2025...

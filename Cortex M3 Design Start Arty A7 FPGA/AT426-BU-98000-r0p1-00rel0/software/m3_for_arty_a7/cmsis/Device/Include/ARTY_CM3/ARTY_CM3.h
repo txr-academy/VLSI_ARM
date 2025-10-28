@@ -1,5 +1,5 @@
 /**************************************************************************//**
- * @file     ARTY_CM1.h
+ * @file     ARTY_CM3.h
  * @brief    CMSIS Core Peripheral Access Layer Header File for
  *           CM1 Device
  * @version  V3.02

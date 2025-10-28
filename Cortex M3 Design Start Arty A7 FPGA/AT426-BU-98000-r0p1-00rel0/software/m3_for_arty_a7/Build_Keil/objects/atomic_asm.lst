@@ -38,12 +38,12 @@ ARM Macro Assembler    Page 1
    25 0000000C                 END
 Command Line: --debug --xref --diag_suppress=9931,A1950W --cpu=Cortex-M3 --depe
 nd=.\objects\atomic_asm.d -o.\objects\atomic_asm.o -I.\RTE\_m3_for_arty_a7 -IC:
-\Users\rajal\AppData\Local\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include -IC:\Us
-ers\rajal\AppData\Local\Arm\Packs\ARM\Cortex_DFP\1.1.0\Device\ARMCM3\Include -I
-C:\Users\rajal\AppData\Local\Arm\Packs\ARM\Cortex_DFP\1.1.0\Device\ARM\ARMCM3\I
-nclude --predefine="__EVAL SETA 1" --predefine="__UVISION_VERSION SETA 543" --p
-redefine="ARMCM3 SETA 1" --predefine="_RTE_ SETA 1" --list=.\objects\atomic_asm
-.lst ..\main\atomic_asm.s
+\Users\Sreejesh\AppData\Local\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include -IC:
+\Users\Sreejesh\AppData\Local\Arm\Packs\ARM\Cortex_DFP\1.1.0\Device\ARMCM3\Incl
+ude -IC:\Users\Sreejesh\AppData\Local\Arm\Packs\ARM\Cortex_DFP\1.1.0\Device\ARM
+\ARMCM3\Include --predefine="__EVAL SETA 1" --predefine="__UVISION_VERSION SETA
+ 543" --predefine="ARMCM3 SETA 1" --predefine="_RTE_ SETA 1" --list=.\objects\a
+tomic_asm.lst ..\main\atomic_asm.s
 
 
 

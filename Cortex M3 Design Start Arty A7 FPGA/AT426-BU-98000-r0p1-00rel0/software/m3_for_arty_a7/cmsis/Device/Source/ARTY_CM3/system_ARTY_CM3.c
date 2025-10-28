@@ -1,5 +1,5 @@
 /**************************************************************************//**
- * @file     system_ARTY_CM1.c
+ * @file     system_ARTY_CM3.c
  * @brief    CMSIS Device System Source File for
  *           M3 Device
  * @version  V3.02

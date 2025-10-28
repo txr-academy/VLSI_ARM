@@ -1,359 +1,345 @@
 Dependencies for Project 'm3_for_arty_a7', Target 'm3_for_arty_a7': (DO NOT MODIFY !)
 CompilerVersion: 6240000::V6.24::ARMCLANG
-F (..\cmsis\Device\Source\ARTY_CM3\system_ARTY_CM3.c)(0x5D27354F)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/system_arty_cm3.o -MMD)
-I (..\cmsis\Device\Include\ARTY_CM3\ARTY_CM3.h)(0x5D27354F)
-I (..\cmsis\CMSIS\Include\core_CM3.h)(0x5D27354F)
-I (..\cmsis\CMSIS\Include\core_cmInstr.h)(0x68E72A11)
-I (..\cmsis\CMSIS\Include\core_cmFunc.h)(0x5D27354F)
-I (..\cmsis\Device\Include\ARTY_CM3\system_ARTY_CM3.h)(0x5D27354F)
-F (..\cmsis\Device\Source\ARTY_CM3\ARM\startup_ARTY_CM3.s)(0x5D134FB8)(--cpu Cortex-M3 --li --pd "__EVAL SETA 1" -g --diag_suppress=A1950W-I.\RTE\_m3_for_arty_a7-IC:\Users\rajal\AppData\Local\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-IC:\Users\rajal\AppData\Local\Arm\Packs\ARM\Cortex_DFP\1.1.0\Device\ARMCM3\Include-IC:\Users\rajal\AppData\Local\Arm\Packs\ARM\Cortex_DFP\1.1.0\Device\ARM\ARMCM3\Include--pd "__UVISION_VERSION SETA 543"--pd "ARMCM3 SETA 1"--pd "_RTE_ SETA 1"--list .\objects\startup_arty_cm3.lst--xref -o .\objects\startup_arty_cm3.o--depend .\objects\startup_arty_cm3.d)
-F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\standalone_v6_7\src\outbyte.c)(0x68E7583A)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/outbyte.o -MMD)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xuartlite_l.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68E728DB)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68E7583A)
-F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\standalone_v6_7\src\print.c)(0x68E7583A)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/print.o -MMD)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\standalone_v6_7\src\xil_printf.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\standalone_v6_7\src\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\standalone_v6_7\src\bspconfig.h)(0x68E7583A)
-F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\standalone_v6_7\src\xil_assert.c)(0x68E7583A)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xil_assert.o -MMD)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\standalone_v6_7\src\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\standalone_v6_7\src\xil_assert.h)(0x68E7583A)
-F (..\main\main.c)(0x68E9BA32)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/main.o -MMD)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xgpio.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xgpio_l.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68E728DB)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68E7583A)
-I (..\main\m3_for_arty.h)(0x5D27354F)
-I (..\cmsis\Device\Include\peripherallink.h)(0x68E72E82)
-I (..\cmsis\Device\Include\ARTY_CM3\ARTY_CM3.h)(0x5D27354F)
-I (..\cmsis\CMSIS\Include\core_CM3.h)(0x5D27354F)
-I (..\cmsis\CMSIS\Include\core_cmInstr.h)(0x68E72A11)
-I (..\cmsis\CMSIS\Include\core_cmFunc.h)(0x5D27354F)
-I (..\cmsis\Device\Include\ARTY_CM3\system_ARTY_CM3.h)(0x5D27354F)
-I (..\uart\uart.h)(0x5D27354F)
-F (..\main\atomic_asm.s)(0x5D134FB7)(--cpu Cortex-M3 --li --pd "__EVAL SETA 1" -g --diag_suppress=A1950W-I.\RTE\_m3_for_arty_a7-IC:\Users\rajal\AppData\Local\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-IC:\Users\rajal\AppData\Local\Arm\Packs\ARM\Cortex_DFP\1.1.0\Device\ARMCM3\Include-IC:\Users\rajal\AppData\Local\Arm\Packs\ARM\Cortex_DFP\1.1.0\Device\ARM\ARMCM3\Include--pd "__UVISION_VERSION SETA 543"--pd "ARMCM3 SETA 1"--pd "_RTE_ SETA 1"--list .\objects\atomic_asm.lst--xref -o .\objects\atomic_asm.o--depend .\objects\atomic_asm.d)
-F (..\main\atomic.c)(0x5D27354F)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/atomic.o -MMD)
-I (..\main\atomic.h)(0x5D27354F)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68E7583A)
-F (..\gpio\gpio.c)(0x5D27354F)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/gpio.o -MMD)
-I (..\gpio\gpio.h)(0x5D27354F)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xgpio.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xgpio_l.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68E728DB)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68E7583A)
-I (..\cmsis\Device\Include\peripherallink.h)(0x68E72E82)
-I (..\cmsis\Device\Include\ARTY_CM3\ARTY_CM3.h)(0x5D27354F)
-I (..\cmsis\CMSIS\Include\core_CM3.h)(0x5D27354F)
-I (..\cmsis\CMSIS\Include\core_cmInstr.h)(0x68E72A11)
-I (..\cmsis\CMSIS\Include\core_cmFunc.h)(0x5D27354F)
-I (..\cmsis\Device\Include\ARTY_CM3\system_ARTY_CM3.h)(0x5D27354F)
-F (..\spi\spi.c)(0x5D27354F)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/spi.o -MMD)
-I (..\main\m3_for_arty.h)(0x5D27354F)
-I (..\cmsis\Device\Include\peripherallink.h)(0x68E72E82)
-I (..\cmsis\Device\Include\ARTY_CM3\ARTY_CM3.h)(0x5D27354F)
-I (..\cmsis\CMSIS\Include\core_CM3.h)(0x5D27354F)
-I (..\cmsis\CMSIS\Include\core_cmInstr.h)(0x68E72A11)
-I (..\cmsis\CMSIS\Include\core_cmFunc.h)(0x5D27354F)
-I (..\cmsis\Device\Include\ARTY_CM3\system_ARTY_CM3.h)(0x5D27354F)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xspi.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xspi_l.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68E728DB)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68E7583A)
-F (..\uart\uart.c)(0x5D27354F)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/uart.o -MMD)
-I (..\main\m3_for_arty.h)(0x5D27354F)
-I (..\cmsis\Device\Include\peripherallink.h)(0x68E72E82)
-I (..\cmsis\Device\Include\ARTY_CM3\ARTY_CM3.h)(0x5D27354F)
-I (..\cmsis\CMSIS\Include\core_CM3.h)(0x5D27354F)
-I (..\cmsis\CMSIS\Include\core_cmInstr.h)(0x68E72A11)
-I (..\cmsis\CMSIS\Include\core_cmFunc.h)(0x5D27354F)
-I (..\cmsis\Device\Include\ARTY_CM3\system_ARTY_CM3.h)(0x5D27354F)
-I (..\uart\uart.h)(0x5D27354F)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xuartlite.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68E7583A)
-F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio.c)(0x68E7583A)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xgpio.o -MMD)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_l.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68E728DB)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68E7583A)
-F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_extra.c)(0x68E7583A)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xgpio_extra.o -MMD)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_l.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68E728DB)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_i.h)(0x68E7583A)
-F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_g.c)(0x68E7583A)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xgpio_g.o -MMD)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_l.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68E728DB)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68E7583A)
-F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_intr.c)(0x68E7583A)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xgpio_intr.o -MMD)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_l.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68E728DB)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68E7583A)
-F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_selftest.c)(0x68E7583A)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xgpio_selftest.o -MMD)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_l.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68E728DB)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68E7583A)
-F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_sinit.c)(0x68E7583A)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xgpio_sinit.o -MMD)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_i.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_l.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68E728DB)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68E7583A)
-F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi.c)(0x68E7583A)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xspi.o -MMD)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_l.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68E728DB)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_i.h)(0x68E7583A)
-F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_g.c)(0x68E7583A)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xspi_g.o -MMD)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_l.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68E728DB)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68E7583A)
-F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_options.c)(0x68E7583A)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xspi_options.o -MMD)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_l.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68E728DB)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_i.h)(0x68E7583A)
-F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_selftest.c)(0x68E7583A)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xspi_selftest.o -MMD)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_l.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68E728DB)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_i.h)(0x68E7583A)
-F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_sinit.c)(0x68E7583A)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xspi_sinit.o -MMD)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_l.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68E728DB)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68E7583A)
-F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_stats.c)(0x68E7583A)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xspi_stats.o -MMD)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_l.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68E728DB)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_i.h)(0x68E7583A)
-F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite.c)(0x68E7583A)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xuartlite.o -MMD)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_i.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_l.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68E728DB)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68E7583A)
-F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_g.c)(0x68E7583A)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xuartlite_g.o -MMD)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68E7583A)
-F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_intr.c)(0x68E7583A)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xuartlite_intr.o -MMD)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_i.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_l.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68E728DB)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68E7583A)
-F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_l.c)(0x68E7583A)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xuartlite_l.o -MMD)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_l.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68E728DB)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68E7583A)
-F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_selftest.c)(0x68E7583A)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xuartlite_selftest.o -MMD)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_i.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_l.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68E728DB)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68E7583A)
-F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_sinit.c)(0x68E7583A)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xuartlite_sinit.o -MMD)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_i.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_l.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68E728DB)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68E7583A)
-F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_stats.c)(0x68E7583A)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xuartlite_stats.o -MMD)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_i.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_l.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68E728DB)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68E7583A)
-I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68E7583A)
+F (..\cmsis\Device\Source\ARTY_CM3\system_ARTY_CM3.c)(0x68FF0AFA)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/system_arty_cm3.o -MMD)
+I (..\cmsis\Device\Include\ARTY_CM3\ARTY_CM3.h)(0x68FF0AF1)
+I (..\cmsis\CMSIS\Include\core_CM3.h)(0x68FA0614)
+I (..\cmsis\CMSIS\Include\core_cmInstr.h)(0x68FA0614)
+I (..\cmsis\CMSIS\Include\core_cmFunc.h)(0x68FA0614)
+I (..\cmsis\Device\Include\ARTY_CM3\system_ARTY_CM3.h)(0x68FA0614)
+F (..\cmsis\Device\Source\ARTY_CM3\ARM\startup_ARTY_CM3.s)(0x68FA0614)(--cpu Cortex-M3 --li --pd "__EVAL SETA 1" -g --diag_suppress=A1950W-I.\RTE\_m3_for_arty_a7-IC:\Users\Sreejesh\AppData\Local\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-IC:\Users\Sreejesh\AppData\Local\Arm\Packs\ARM\Cortex_DFP\1.1.0\Device\ARMCM3\Include-IC:\Users\Sreejesh\AppData\Local\Arm\Packs\ARM\Cortex_DFP\1.1.0\Device\ARM\ARMCM3\Include--pd "__UVISION_VERSION SETA 543"--pd "ARMCM3 SETA 1"--pd "_RTE_ SETA 1"--list .\objects\startup_arty_cm3.lst--xref -o .\objects\startup_arty_cm3.o--depend .\objects\startup_arty_cm3.d)
+F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\standalone_v6_7\src\outbyte.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/outbyte.o -MMD)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xuartlite_l.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68FA0614)
+F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\standalone_v6_7\src\print.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/print.o -MMD)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\standalone_v6_7\src\xil_printf.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\standalone_v6_7\src\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\standalone_v6_7\src\bspconfig.h)(0x68FA0614)
+F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\standalone_v6_7\src\xil_assert.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xil_assert.o -MMD)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\standalone_v6_7\src\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\standalone_v6_7\src\xil_assert.h)(0x68FA0614)
+F (..\main\main.c)(0x68FF08E9)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/main.o -MMD)
+I (..\cmsis\CMSIS\Include\core_cm3.h)(0x68FA0614)
+I (..\cmsis\CMSIS\Include\core_cmInstr.h)(0x68FA0614)
+I (..\cmsis\CMSIS\Include\core_cmFunc.h)(0x68FA0614)
+I (..\uart\uart.h)(0x68FA0614)
+I (..\gpio\gpio.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+F (..\main\atomic_asm.s)(0x68FA0614)(--cpu Cortex-M3 --li --pd "__EVAL SETA 1" -g --diag_suppress=A1950W-I.\RTE\_m3_for_arty_a7-IC:\Users\Sreejesh\AppData\Local\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-IC:\Users\Sreejesh\AppData\Local\Arm\Packs\ARM\Cortex_DFP\1.1.0\Device\ARMCM3\Include-IC:\Users\Sreejesh\AppData\Local\Arm\Packs\ARM\Cortex_DFP\1.1.0\Device\ARM\ARMCM3\Include--pd "__UVISION_VERSION SETA 543"--pd "ARMCM3 SETA 1"--pd "_RTE_ SETA 1"--list .\objects\atomic_asm.lst--xref -o .\objects\atomic_asm.o--depend .\objects\atomic_asm.d)
+F (..\main\atomic.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/atomic.o -MMD)
+I (..\main\atomic.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68FA0614)
+F (..\gpio\gpio.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/gpio.o -MMD)
+I (..\gpio\gpio.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xgpio.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xgpio_l.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68FA0614)
+I (..\cmsis\Device\Include\peripherallink.h)(0x68FA0614)
+I (..\cmsis\Device\Include\ARTY_CM3\ARTY_CM3.h)(0x68FF0AF1)
+I (..\cmsis\CMSIS\Include\core_CM3.h)(0x68FA0614)
+I (..\cmsis\CMSIS\Include\core_cmInstr.h)(0x68FA0614)
+I (..\cmsis\CMSIS\Include\core_cmFunc.h)(0x68FA0614)
+I (..\cmsis\Device\Include\ARTY_CM3\system_ARTY_CM3.h)(0x68FA0614)
+F (..\spi\spi.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/spi.o -MMD)
+I (..\main\m3_for_arty.h)(0x68FA0614)
+I (..\cmsis\Device\Include\peripherallink.h)(0x68FA0614)
+I (..\cmsis\Device\Include\ARTY_CM3\ARTY_CM3.h)(0x68FF0AF1)
+I (..\cmsis\CMSIS\Include\core_CM3.h)(0x68FA0614)
+I (..\cmsis\CMSIS\Include\core_cmInstr.h)(0x68FA0614)
+I (..\cmsis\CMSIS\Include\core_cmFunc.h)(0x68FA0614)
+I (..\cmsis\Device\Include\ARTY_CM3\system_ARTY_CM3.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xspi.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xspi_l.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68FA0614)
+F (..\uart\uart.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/uart.o -MMD)
+I (..\main\m3_for_arty.h)(0x68FA0614)
+I (..\cmsis\Device\Include\peripherallink.h)(0x68FA0614)
+I (..\cmsis\Device\Include\ARTY_CM3\ARTY_CM3.h)(0x68FF0AF1)
+I (..\cmsis\CMSIS\Include\core_CM3.h)(0x68FA0614)
+I (..\cmsis\CMSIS\Include\core_cmInstr.h)(0x68FA0614)
+I (..\cmsis\CMSIS\Include\core_cmFunc.h)(0x68FA0614)
+I (..\cmsis\Device\Include\ARTY_CM3\system_ARTY_CM3.h)(0x68FA0614)
+I (..\uart\uart.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xuartlite.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68FA0614)
+F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xgpio.o -MMD)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_l.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68FA0614)
+F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_extra.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xgpio_extra.o -MMD)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_l.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_i.h)(0x68FA0614)
+F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_g.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xgpio_g.o -MMD)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_l.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68FA0614)
+F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_intr.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xgpio_intr.o -MMD)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_l.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68FA0614)
+F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_selftest.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xgpio_selftest.o -MMD)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_l.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68FA0614)
+F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_sinit.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xgpio_sinit.o -MMD)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_i.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\gpio_v4_4\src\xgpio_l.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68FA0614)
+F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xspi.o -MMD)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_l.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_i.h)(0x68FA0614)
+F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_g.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xspi_g.o -MMD)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_l.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68FA0614)
+F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_options.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xspi_options.o -MMD)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_l.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_i.h)(0x68FA0614)
+F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_selftest.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xspi_selftest.o -MMD)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_l.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_i.h)(0x68FA0614)
+F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_sinit.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xspi_sinit.o -MMD)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_l.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68FA0614)
+F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_stats.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xspi_stats.o -MMD)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_l.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\spi_v4_4\src\xspi_i.h)(0x68FA0614)
+F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xuartlite.o -MMD)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_i.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_l.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68FA0614)
+F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_g.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xuartlite_g.o -MMD)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68FA0614)
+F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_intr.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xuartlite_intr.o -MMD)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_i.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_l.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68FA0614)
+F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_l.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xuartlite_l.o -MMD)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_l.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68FA0614)
+F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_selftest.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xuartlite_selftest.o -MMD)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_i.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_l.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68FA0614)
+F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_sinit.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xuartlite_sinit.o -MMD)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_i.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_l.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68FA0614)
+F (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_stats.c)(0x68FA0614)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -mlittle-endian -gdwarf-4 -O1 -fno-function-sections -I ../cmsis/CMSIS/Include -I ../cmsis/Device/Include -I ../cmsis/Device/Include/ARTY_CM3 -I ../main -I ../gpio -I ../uart -I ../spi -I ../sdk_workspace/standalone_bsp_0/Cortex_M3_0/include-I./RTE/_m3_for_arty_a7-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include-IC:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARM/ARMCM3/Include-D__UVISION_VERSION="543" -DARMCM3 -D_RTE_ -Dinline="__inline"-o ./objects/xuartlite_stats.o -MMD)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_types.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_assert.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xstatus.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_i.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\libsrc\uartlite_v3_2\src\xuartlite_l.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_io.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xil_printf.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xparameters.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\bspconfig.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xreg_cortexm3.h)(0x68FA0614)
+I (..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include\xpseudo_asm_gcc.h)(0x68FA0614)

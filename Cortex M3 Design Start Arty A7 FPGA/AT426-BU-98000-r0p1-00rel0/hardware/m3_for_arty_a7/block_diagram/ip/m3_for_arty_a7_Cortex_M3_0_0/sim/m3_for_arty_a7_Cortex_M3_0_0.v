@@ -317,7 +317,7 @@ input wire [31 : 0] HRDATAC;
     .DTCM_SIZE(4'B0110),
     .ITCM_INIT_RAM(1'B1),
     .DTCM_INIT_RAM(1'B1),
-    .ITCM_INIT_FILE("arm_custom_hello.hex"),
+    .ITCM_INIT_FILE("arjun_new.hex"),
     .DTCM_INIT_FILE(""),
     .AUSER_WIDTH(1),
     .AUSER_MAX(0),

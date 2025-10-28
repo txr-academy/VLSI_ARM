@@ -97,7 +97,7 @@
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.DTCM_INIT_FILE"/>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.DTCM_INIT_RAM">true</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.DTCM_SIZE">&quot;0110&quot;</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.ITCM_INIT_FILE">arm_custom_hello.hex</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.ITCM_INIT_FILE">arjun_new.hex</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.ITCM_INIT_RAM">true</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.ITCM_SIZE">&quot;0110&quot;</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.JTAG_PRESENT">true</spirit:configurableElementValue>
@@ -117,7 +117,7 @@
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.DTCM_INIT_FILE"/>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.DTCM_INIT_RAM">true</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.DTCM_SIZE">&quot;0110&quot;</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ITCM_INIT_FILE">arm_custom_hello.hex</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ITCM_INIT_FILE">arjun_new.hex</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ITCM_INIT_RAM">true</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ITCM_SIZE">&quot;0110&quot;</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.JTAG_PRESENT">true</spirit:configurableElementValue>

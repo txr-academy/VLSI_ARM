@@ -126,9 +126,15 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 1
-  reset_param project.defaultXPMLibraries 
-  open_checkpoint /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/m3_for_arty_a7.runs/impl_1/m3_for_arty_a7_wrapper.dcp
+  set_param chipscope.maxJobs 3
+OPTRACE "create in-memory project" START { }
+  create_project -in_memory -part xc7a100tcsg324-1
+  set_property board_part_repo_paths {/home/arjun/.Xilinx/Vivado/2022.1/xhub/board_store/xilinx_board_store} [current_project]
+  set_property board_part digilentinc.com:arty-a7-100:part0:1.1 [current_project]
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
+OPTRACE "create in-memory project" END { }
+OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/m3_for_arty_a7.cache/wt [current_project]
   set_property parent.project_path /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/m3_for_arty_a7.xpr [current_project]
   set_property ip_repo_paths /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/vivado/Arm_ipi_repository [current_project]
@@ -136,6 +142,26 @@ set rc [catch {
   set_property ip_output_repo /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/m3_for_arty_a7.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
+OPTRACE "set parameters" END { }
+OPTRACE "add files" START { }
+  add_files -quiet /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/m3_for_arty_a7.runs/synth_1/m3_for_arty_a7_wrapper.dcp
+  set_msg_config -source 4 -id {BD 41-1661} -limit 0
+  set_param project.isImplRun true
+  add_files /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/block_diagram/m3_for_arty_a7.bd
+  set_param project.isImplRun false
+OPTRACE "read constraints: implementation" START { }
+  read_xdc /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/constraints/m3_for_arty_a7.xdc
+  read_xdc /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/constraints/m3_for_arty_a7_impl.xdc
+  read_xdc /home/arjun/Vivado_PROJECTS/ARM_XPM_03_sept_2025/AT426-BU-98000-r0p1-00rel0/hardware/m3_for_arty_a7/m3_for_arty_a7/m3_for_arty_a7.srcs/constrs_1/new/iola.xdc
+OPTRACE "read constraints: implementation" END { }
+OPTRACE "add files" END { }
+OPTRACE "link_design" START { }
+  set_param project.isImplRun true
+  link_design -top m3_for_arty_a7_wrapper -part xc7a100tcsg324-1 
+OPTRACE "link_design" END { }
+  set_param project.isImplRun false
+OPTRACE "gray box cells" START { }
+OPTRACE "gray box cells" END { }
 OPTRACE "init_design_reports" START { REPORT }
 OPTRACE "init_design_reports" END { }
 OPTRACE "init_design_write_hwdef" START { }

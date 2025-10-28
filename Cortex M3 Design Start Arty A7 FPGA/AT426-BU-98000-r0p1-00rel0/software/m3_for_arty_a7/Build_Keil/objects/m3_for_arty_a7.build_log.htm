@@ -5,11 +5,11 @@
 <h2>Tool Versions:</h2>
 IDE-Version: µVision V5.43.1.0
 Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: ewf rf, rf, LIC=----
+License Information: v Sreejesh, j, LIC=----
  
 Tool Versions:
 Toolchain:       MDK-Lite  Version: 5.43.0.0
-Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+Toolchain Path:  C:\Users\Sreejesh\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
 C Compiler:      ArmClang.exe V6.24
 Assembler:       Armasm.exe V6.24
 Linker/Locator:  ArmLink.exe V6.24
@@ -21,33 +21,17 @@ Target DLL:      UL2CM3.DLL V1.164.16.0
 Dialog DLL:      TCM.DLL V1.56.6.0
  
 <h2>Project:</h2>
-D:\ARM_XPM_03_sept_2025\AT426-BU-98000-r0p1-00rel0\software\m3_for_arty_a7\Build_Keil\m3_for_arty_a7.uvprojx
-Project File Date:  10/09/2025
+D:\GIT\VLSI_ARM\Cortex M3 Design Start Arty A7 FPGA\AT426-BU-98000-r0p1-00rel0\software\m3_for_arty_a7\Build_Keil\m3_for_arty_a7.uvprojx
+Project File Date:  10/27/2025
 
 <h2>Output:</h2>
-*** Using Compiler 'V6.24', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+*** Using Compiler 'V6.24', folder: 'C:\Users\Sreejesh\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
 Rebuild target 'm3_for_arty_a7'
-assembling startup_ARTY_CM3.s...
-compiling atomic.c...
 assembling atomic_asm.s...
-compiling outbyte.c...
+assembling startup_ARTY_CM3.s...
 compiling print.c...
 compiling xil_assert.c...
-../cmsis/Device/Source/ARTY_CM3/system_ARTY_CM3.c(39): warning: In file included from...
-../cmsis/Device/Include/ARTY_CM3\ARTY_CM3.h(109): warning: non-portable path to file '<core_cm3.h>'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-  109 | #include <core_CM3.h>                         /* Processor and core peripherals                  */
-      |          ^~~~~~~~~~~~
-      |          <core_cm3.h>
-1 warning generated.
-compiling system_ARTY_CM3.c...
-../gpio/gpio.c(25): warning: In file included from...
-../cmsis/Device/Include\peripherallink.h(20): warning: In file included from...
-../cmsis/Device/Include/ARTY_CM3\ARTY_CM3.h(109): warning: non-portable path to file '<core_cm3.h>'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-  109 | #include <core_CM3.h>                         /* Processor and core peripherals                  */
-      |          ^~~~~~~~~~~~
-      |          <core_cm3.h>
-1 warning generated.
-compiling gpio.c...
+compiling atomic.c...
 ../uart/uart.c(29): warning: In file included from...
 ../main\m3_for_arty.h(20): warning: In file included from...
 ../cmsis/Device/Include\peripherallink.h(20): warning: In file included from...
@@ -57,6 +41,85 @@ compiling gpio.c...
       |          <core_cm3.h>
 1 warning generated.
 compiling uart.c...
+../cmsis/Device/Source/ARTY_CM3/system_ARTY_CM3.c(39): warning: In file included from...
+../cmsis/Device/Include/ARTY_CM3\ARTY_CM3.h(109): warning: non-portable path to file '<core_cm3.h>'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+  109 | #include <core_CM3.h>                         /* Processor and core peripherals                  */
+      |          ^~~~~~~~~~~~
+      |          <core_cm3.h>
+1 warning generated.
+compiling system_ARTY_CM3.c...
+compiling outbyte.c...
+../gpio/gpio.c(25): warning: In file included from...
+../cmsis/Device/Include\peripherallink.h(20): warning: In file included from...
+../cmsis/Device/Include/ARTY_CM3\ARTY_CM3.h(109): warning: non-portable path to file '<core_cm3.h>'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+  109 | #include <core_CM3.h>                         /* Processor and core peripherals                  */
+      |          ^~~~~~~~~~~~
+      |          <core_cm3.h>
+1 warning generated.
+compiling gpio.c...
+../main/main.c(7): warning: In file included from...
+../cmsis/CMSIS/Include\core_cm3.h(1323): error: unknown type name 'IRQn_Type'
+ 1323 | __STATIC_INLINE void NVIC_EnableIRQ(IRQn_Type IRQn)
+      |                                     ^
+../cmsis/CMSIS/Include\core_cm3.h(1335): error: unknown type name 'IRQn_Type'
+ 1335 | __STATIC_INLINE void NVIC_DisableIRQ(IRQn_Type IRQn)
+      |                                      ^
+../cmsis/CMSIS/Include\core_cm3.h(1351): error: unknown type name 'IRQn_Type'
+ 1351 | __STATIC_INLINE uint32_t NVIC_GetPendingIRQ(IRQn_Type IRQn)
+      |                                             ^
+../cmsis/CMSIS/Include\core_cm3.h(1363): error: unknown type name 'IRQn_Type'
+ 1363 | __STATIC_INLINE void NVIC_SetPendingIRQ(IRQn_Type IRQn)
+      |                                         ^
+../cmsis/CMSIS/Include\core_cm3.h(1375): error: unknown type name 'IRQn_Type'
+ 1375 | __STATIC_INLINE void NVIC_ClearPendingIRQ(IRQn_Type IRQn)
+      |                                           ^
+../cmsis/CMSIS/Include\core_cm3.h(1399): error: unknown type name 'IRQn_Type'
+ 1399 | __STATIC_INLINE uint32_t NVIC_GetActive(IRQn_Type IRQn)
+      |                                         ^
+../cmsis/CMSIS/Include\core_cm3.h(1414): error: unknown type name 'IRQn_Type'
+ 1414 | __STATIC_INLINE void NVIC_SetPriority(IRQn_Type IRQn, uint32_t priority)
+      |                                       ^
+../cmsis/CMSIS/Include\core_cm3.h(1417): error: use of undeclared identifier '__NVIC_PRIO_BITS'
+ 1417 |     SCB->SHP[((uint32_t)(IRQn) & 0xF)-4] = ((priority << (8 - __NVIC_PRIO_BITS)) & 0xff); } /* set Priority for Cortex-M  System Interrupts */
+      |                                                               ^
+../cmsis/CMSIS/Include\core_cm3.h(1419): error: use of undeclared identifier '__NVIC_PRIO_BITS'
+ 1419 |     NVIC->IP[(uint32_t)(IRQn)] = ((priority << (8 - __NVIC_PRIO_BITS)) & 0xff);    }        /* set Priority for device specific Interrupts  */
+      |                                                     ^
+../cmsis/CMSIS/Include\core_cm3.h(1434): error: unknown type name 'IRQn_Type'
+ 1434 | __STATIC_INLINE uint32_t NVIC_GetPriority(IRQn_Type IRQn)
+      |                                           ^
+../cmsis/CMSIS/Include\core_cm3.h(1438): error: use of undeclared identifier '__NVIC_PRIO_BITS'
+ 1438 |     return((uint32_t)(SCB->SHP[((uint32_t)(IRQn) & 0xF)-4] >> (8 - __NVIC_PRIO_BITS)));  } /* get priority for Cortex-M  system interrupts */
+      |                                                                    ^
+../cmsis/CMSIS/Include\core_cm3.h(1440): error: use of undeclared identifier '__NVIC_PRIO_BITS'
+ 1440 |     return((uint32_t)(NVIC->IP[(uint32_t)(IRQn)]           >> (8 - __NVIC_PRIO_BITS)));  } /* get priority for device specific interrupts  */
+      |                                                                    ^
+../cmsis/CMSIS/Include\core_cm3.h(1462): error: use of undeclared identifier '__NVIC_PRIO_BITS'
+ 1462 |   PreemptPriorityBits = ((7 - PriorityGroupTmp) > __NVIC_PRIO_BITS) ? __NVIC_PRIO_BITS : 7 - PriorityGroupTmp;
+      |                                                   ^
+../cmsis/CMSIS/Include\core_cm3.h(1462): error: use of undeclared identifier '__NVIC_PRIO_BITS'
+ 1462 |   PreemptPriorityBits = ((7 - PriorityGroupTmp) > __NVIC_PRIO_BITS) ? __NVIC_PRIO_BITS : 7 - PriorityGroupTmp;
+      |                                                                       ^
+../cmsis/CMSIS/Include\core_cm3.h(1463): error: use of undeclared identifier '__NVIC_PRIO_BITS'
+ 1463 |   SubPriorityBits     = ((PriorityGroupTmp + __NVIC_PRIO_BITS) < 7) ? 0 : PriorityGroupTmp - 7 + __NVIC_PRIO_BITS;
+      |                                              ^
+../cmsis/CMSIS/Include\core_cm3.h(1463): error: use of undeclared identifier '__NVIC_PRIO_BITS'
+ 1463 |   SubPriorityBits     = ((PriorityGroupTmp + __NVIC_PRIO_BITS) < 7) ? 0 : PriorityGroupTmp - 7 + __NVIC_PRIO_BITS;
+      |                                                                                                  ^
+../cmsis/CMSIS/Include\core_cm3.h(1490): error: use of undeclared identifier '__NVIC_PRIO_BITS'
+ 1490 |   PreemptPriorityBits = ((7 - PriorityGroupTmp) > __NVIC_PRIO_BITS) ? __NVIC_PRIO_BITS : 7 - PriorityGroupTmp;
+      |                                                   ^
+../cmsis/CMSIS/Include\core_cm3.h(1490): error: use of undeclared identifier '__NVIC_PRIO_BITS'
+ 1490 |   PreemptPriorityBits = ((7 - PriorityGroupTmp) > __NVIC_PRIO_BITS) ? __NVIC_PRIO_BITS : 7 - PriorityGroupTmp;
+      |                                                                       ^
+../cmsis/CMSIS/Include\core_cm3.h(1491): error: use of undeclared identifier '__NVIC_PRIO_BITS'
+ 1491 |   SubPriorityBits     = ((PriorityGroupTmp + __NVIC_PRIO_BITS) < 7) ? 0 : PriorityGroupTmp - 7 + __NVIC_PRIO_BITS;
+      |                                              ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling main.c...
+compiling xgpio.c...
+compiling xgpio_extra.c...
 ../spi/spi.c(24): warning: In file included from...
 ../main\m3_for_arty.h(20): warning: In file included from...
 ../cmsis/Device/Include\peripherallink.h(20): warning: In file included from...
@@ -66,54 +129,24 @@ compiling uart.c...
       |          <core_cm3.h>
 1 warning generated.
 compiling spi.c...
-../main/main.c(34): warning: In file included from...
-../main\m3_for_arty.h(20): warning: In file included from...
-../cmsis/Device/Include\peripherallink.h(20): warning: In file included from...
-../cmsis/Device/Include/ARTY_CM3\ARTY_CM3.h(109): warning: non-portable path to file '<core_cm3.h>'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-  109 | #include <core_CM3.h>                         /* Processor and core peripherals                  */
-      |          ^~~~~~~~~~~~
-      |          <core_cm3.h>
-1 warning generated.
-compiling main.c...
-compiling xgpio.c...
 compiling xgpio_g.c...
-compiling xgpio_extra.c...
-compiling xgpio_intr.c...
 compiling xgpio_selftest.c...
+compiling xgpio_intr.c...
 compiling xgpio_sinit.c...
 compiling xspi_g.c...
-compiling xspi.c...
 compiling xspi_options.c...
-compiling xspi_selftest.c...
+compiling xspi.c...
 compiling xspi_sinit.c...
-compiling xuartlite_g.c...
 compiling xspi_stats.c...
+compiling xuartlite_g.c...
+compiling xspi_selftest.c...
 compiling xuartlite_intr.c...
-compiling xuartlite_l.c...
 compiling xuartlite.c...
+compiling xuartlite_l.c...
 compiling xuartlite_selftest.c...
 compiling xuartlite_sinit.c...
 compiling xuartlite_stats.c...
-linking...
-Program Size: Code=9250 RO-data=1074 RW-data=184 ZI-data=5240  
-FromELF: creating hex file...
-After Build - User command #1: make_hex_a7.bat
-D:\ARM_XPM_03_sept_2025\AT426-BU-98000-r0p1-00rel0\software\m3_for_arty_a7\Build_Keil>call "C:\Keil_v5\ARM\ARM_Compiler_5.06u7\bin\fromelf.exe" --vhx --32x1 --output bram_a7.hex objects\m3_for_arty_a7.axf 
-D:\ARM_XPM_03_sept_2025\AT426-BU-98000-r0p1-00rel0\software\m3_for_arty_a7\Build_Keil>copy  objects\m3_for_arty_a7.axf bram_a7.elf 
-        1 file(s) copied.
-D:\ARM_XPM_03_sept_2025\AT426-BU-98000-r0p1-00rel0\software\m3_for_arty_a7\Build_Keil>call fromelf --vhx --8x1  --output qspi_a7.hex objects\m3_for_arty_a7.axf 
-'fromelf' is not recognized as an internal or external command,
-operable program or batch file.
-D:\ARM_XPM_03_sept_2025\AT426-BU-98000-r0p1-00rel0\software\m3_for_arty_a7\Build_Keil>call fromelf --bin        --output qspi_a7.bin objects\m3_for_arty_a7.axf 
-'fromelf' is not recognized as an internal or external command,
-operable program or batch file.
-D:\ARM_XPM_03_sept_2025\AT426-BU-98000-r0p1-00rel0\software\m3_for_arty_a7\Build_Keil>copy bram_a7.* ..\..\..\hardware\m3_for_arty_a7\m3_for_arty_a7 
-bram_a7.elf
-bram_a7.hex
-        2 file(s) copied.
-D:\ARM_XPM_03_sept_2025\AT426-BU-98000-r0p1-00rel0\software\m3_for_arty_a7\Build_Keil>copy qspi_a7.hex ..\..\..\hardware\m3_for_arty_a7\testbench 
-        1 file(s) copied.
-".\objects\m3_for_arty_a7.axf" - 0 Error(s), 5 Warning(s).
+".\objects\m3_for_arty_a7.axf" - 19 Error(s), 4 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -130,13 +163,14 @@ Package Vendor: ARM
 
 <h2>Collection of Component include folders:</h2>
   ./RTE/_m3_for_arty_a7
-  C:/Users/rajal/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include
-  C:/Users/rajal/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include
+  C:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include
+  C:/Users/Sreejesh/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM3/Include
 
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE@6.1.1
-Build Time Elapsed:  00:00:01
+Target not created.
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>
